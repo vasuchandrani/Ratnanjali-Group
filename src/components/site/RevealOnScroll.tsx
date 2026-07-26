@@ -18,7 +18,8 @@ export function Reveal({ as = "div", delay = 0, className = "", children, varian
         entries.forEach((e) => {
           if (e.isIntersecting) {
             e.target.classList.add("in");
-            io.unobserve(e.target);
+          } else {
+            e.target.classList.remove("in");
           }
         });
       },
