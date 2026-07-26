@@ -124,6 +124,29 @@ export const projects: Project[] = [
     highlights: ["Walk to Riverfront", "Earthquake-Resistant", "Designed Main Gate", "Pollution-Free Zone"],
     brochure: "/brochures/ratnaruchi-vatika.pdf",
   },
+  {
+    slug: "shefali-2",
+    name: "Shefali 2.0",
+    tagline: "A Premium Redevelopment Landmark",
+    category: "residential",
+    categoryLabel: "Redevelopment",
+    status: "upcoming",
+    location: "Ahmedabad",
+    year: "2026",
+    configuration: "3 BHK Premium Apartments",
+    cover: "https://cdn.sanity.io/images/72qij255/production/d7850374e8734ce7a896cf6d6243cdac37c756c4-1191x796.png",
+    gallery: [
+      "https://cdn.sanity.io/images/72qij255/production/d7850374e8734ce7a896cf6d6243cdac37c756c4-1191x796.png",
+      "https://cdn.sanity.io/images/72qij255/production/cc901a56adf9f659518cd86e7d857607cb644dc7-1189x553.png",
+      "https://cdn.sanity.io/images/72qij255/production/8c08bb7b9879d006068cdf3acc2bbeb8723fd200-1146x771.png",
+      "https://cdn.sanity.io/images/72qij255/production/df97324bf4b7875133996be3fb05ca7411dcffc7-1189x661.png",
+      "https://cdn.sanity.io/images/72qij255/production/15bb8fa6bb5f41bed973b64b9f6c225eb585f6b7-1155x808.png"
+    ],
+    description:
+      "A premium residential redevelopment project designed for modern urban living, featuring high-end 3 BHK layouts, mechanical parking, private balconies, and exceptional specifications in the heart of Ahmedabad.",
+    highlights: ["Premium 3 BHK Layouts", "Modern Redevelopment", "Mechanical Parking", "Spacious Balconies"],
+    brochure: "/SHEFALI 2.0_ELEVATION DEVELOPMENT.pdf",
+  },
 ];
 
 export const getProjectsByCategory = (cat?: ProjectCategory) =>

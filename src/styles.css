@@ -346,6 +346,32 @@
   }
   .reveal-engrave.in { opacity: 1; transform: none; }
 
+  /* Slide-in left reveal */
+  .reveal-slide-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition:
+      opacity 1.4s cubic-bezier(.2,.7,.2,1),
+      transform 1.4s cubic-bezier(.2,.7,.2,1);
+  }
+  .reveal-slide-left.in {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Slide-in right reveal */
+  .reveal-slide-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition:
+      opacity 1.4s cubic-bezier(.2,.7,.2,1),
+      transform 1.4s cubic-bezier(.2,.7,.2,1);
+  }
+  .reveal-slide-right.in {
+    opacity: 1;
+    transform: none;
+  }
+
   /* ─── Animations ─── */
 
   .marquee {

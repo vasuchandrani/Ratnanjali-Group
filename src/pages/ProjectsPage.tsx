@@ -7,6 +7,9 @@ import { HeritageDivider } from "@/components/heritage/HeritageDivider";
 import { ArrowRight, Download } from "lucide-react";
 
 export function ProjectsPage() {
+  // Toggle to easily turn off the scroll slide animations on project items if needed in the future
+  const ENABLE_SLIDE_ANIMATIONS = true;
+
   return (
     <PageShell>
       {/* Hero header */}
@@ -56,6 +59,10 @@ export function ProjectsPage() {
           <div className="space-y-24 lg:space-y-40">
             {projects.map((project, index) => {
               const isEven = index % 2 === 0;
+              const imageVariant = ENABLE_SLIDE_ANIMATIONS
+                ? (isEven ? "slide-left" : "slide-right")
+                : "blur";
+
               return (
                 <div 
                   key={project.slug} 
@@ -63,7 +70,7 @@ export function ProjectsPage() {
                 >
                   {/* Image Column */}
                   <div className={`lg:col-span-7 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
-                    <Reveal variant="blur">
+                    <Reveal variant={imageVariant}>
                       <Link
                         to="/projects/$slug"
                         params={{ slug: project.slug }}
@@ -90,10 +97,10 @@ export function ProjectsPage() {
                   {/* Content Column */}
                   <div className={`lg:col-span-5 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
                     <Reveal variant="blur" delay={1}>
-                      <div className="space-y-6 lg:space-y-8">
+                      <div className="space-y-4 lg:space-y-5">
                         {/* Title & Tagline Group */}
-                        <div className="space-y-2">
-                          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.1] text-foreground tracking-wide font-semibold">
+                        <div className="space-y-1">
+                          <h2 className="font-display text-3xl sm:text-4xl lg:text-4xl xl:text-5xl leading-[1.1] text-foreground tracking-wide font-semibold">
                             <Link 
                               to="/projects/$slug"
                               params={{ slug: project.slug }}
@@ -102,7 +109,7 @@ export function ProjectsPage() {
                               {project.name}
                             </Link>
                           </h2>
-                          <p className="font-heading text-xl sm:text-2xl italic text-gold-soft">
+                          <p className="font-heading text-lg sm:text-xl italic text-gold-soft">
                             {project.tagline}
                           </p>
                         </div>
@@ -119,18 +126,18 @@ export function ProjectsPage() {
                         </div>
 
                         {/* Description */}
-                        <p className="font-body text-base leading-[1.85] text-muted-foreground/90">
+                        <p className="font-body text-sm sm:text-base leading-relaxed text-muted-foreground/90">
                           {project.description}
                         </p>
 
                         {/* Action buttons */}
-                        <div className="flex flex-wrap items-center gap-5 pt-4">
+                        <div className="flex flex-nowrap items-center gap-3 pt-2">
                           <Link
                             to="/projects/$slug"
                             params={{ slug: project.slug }}
-                            className="group inline-flex items-center gap-2 border border-gold/60 bg-gold/5 px-8 py-4 font-display text-[11px] font-bold uppercase tracking-[0.2em] text-gold hover:bg-gold/15 hover:border-gold transition-all duration-300 rounded-sm"
+                            className="group inline-flex items-center gap-2 border border-gold/60 bg-gold/5 px-6 py-3 font-display text-[11px] font-bold uppercase tracking-[0.2em] text-gold hover:bg-gold/15 hover:border-gold transition-all duration-300 rounded-sm whitespace-nowrap"
                           >
-                            Explore Project
+                            Explore
                             <ArrowRight size={12} className="transition-transform group-hover:translate-x-1" />
                           </Link>
 
@@ -139,7 +146,7 @@ export function ProjectsPage() {
                               href="https://ratnanjaligroup.com"
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="inline-flex items-center gap-2 border border-stone-dark/30 bg-stone-soft/20 px-8 py-4 font-display text-[11px] font-bold uppercase tracking-[0.2em] text-stone-dark hover:text-stone-dark hover:bg-stone-soft/40 hover:border-stone-dark/50 transition-all duration-300 rounded-sm"
+                              className="inline-flex items-center gap-2 border border-stone-dark/30 bg-stone-soft/20 px-6 py-3 font-display text-[11px] font-bold uppercase tracking-[0.2em] text-stone-dark hover:text-stone-dark hover:bg-stone-soft/40 hover:border-stone-dark/50 transition-all duration-300 rounded-sm whitespace-nowrap"
                             >
                               Download Brochure
                               <Download size={12} />

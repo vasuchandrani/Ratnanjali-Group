@@ -4,7 +4,7 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
   as?: "div" | "section" | "article" | "header" | "footer" | "li";
   delay?: 0 | 1 | 2 | 3 | 4;
   children: ReactNode;
-  variant?: "fade-up" | "blur" | "engrave";
+  variant?: "fade-up" | "blur" | "engrave" | "slide-left" | "slide-right";
 }
 
 export function Reveal({ as = "div", delay = 0, className = "", children, variant = "fade-up", ...rest }: Props) {
@@ -30,7 +30,16 @@ export function Reveal({ as = "div", delay = 0, className = "", children, varian
 
   const Tag = as as "div";
   const delayClass = delay ? ` reveal-delay-${delay}` : "";
-  const variantClass = variant === "blur" ? "reveal-blur" : variant === "engrave" ? "reveal-engrave" : "reveal";
+  const variantClass = 
+    variant === "blur" 
+      ? "reveal-blur" 
+      : variant === "engrave" 
+        ? "reveal-engrave" 
+        : variant === "slide-left"
+          ? "reveal-slide-left"
+          : variant === "slide-right"
+            ? "reveal-slide-right"
+            : "reveal";
   return (
     <Tag ref={ref as never} className={`${variantClass}${delayClass} ${className}`} {...rest}>
       {children}
