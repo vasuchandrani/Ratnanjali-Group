@@ -1,0 +1,515 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ═══════════════════════════════════════════════════════════
+   RATNANJALI GROUP — HERITAGE DESIGN SYSTEM
+   "A digital haveli built on dharma"
+   ═══════════════════════════════════════════════════════════ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-stone-soft: var(--stone-soft);
+  --color-stone: var(--stone);
+  --color-stone-dark: var(--stone-dark);
+  --color-basalt: var(--basalt);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-gold-bright: var(--gold-bright);
+  --color-brass: var(--brass);
+  --color-sandstone: var(--sandstone);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-border-gold: var(--border-gold);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Heritage Typography Stack */
+  --font-display: "Cinzel", "Times New Roman", serif;
+  --font-display-decorative: "Cinzel Decorative", "Cinzel", serif;
+  --font-heading: "Cormorant Garamond", "Times New Roman", serif;
+  --font-body: "Lora", "Georgia", serif;
+  --font-label: "Marcellus", "Cinzel", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Carved-stone shadows */
+  --shadow-elevated: 0 30px 60px -30px rgba(15, 10, 5, 0.45);
+  --shadow-card: 0 1px 0 0 rgba(15, 10, 5, 0.08), 0 20px 40px -24px rgba(15, 10, 5, 0.25);
+  --shadow-carved: inset 0 2px 4px rgba(0,0,0,0.3), inset 0 -1px 2px rgba(255,220,150,0.05);
+  --shadow-gold-glow: 0 0 30px rgba(196, 164, 105, 0.15), 0 0 60px rgba(196, 164, 105, 0.05);
+}
+
+:root {
+  --radius: 0.125rem;
+
+  /* ─── Heritage Palette ─── */
+  /* Deep temple-stone darks */
+  --background: oklch(0.96 0.008 65);              /* warm parchment white */
+  --foreground: oklch(0.14 0.012 50);              /* deep basalt */
+  --surface: oklch(0.94 0.01 65);                  /* warm sandstone surface */
+  --stone-soft: oklch(0.91 0.015 62);              /* light carved stone */
+  --stone: oklch(0.85 0.02 60);                    /* temple stone */
+  --stone-dark: oklch(0.25 0.015 55);              /* dark temple interior */
+  --basalt: oklch(0.12 0.01 50);                   /* deepest basalt */
+
+  --card: oklch(0.95 0.008 65);
+  --card-foreground: oklch(0.14 0.012 50);
+  --popover: oklch(0.95 0.008 65);
+  --popover-foreground: oklch(0.14 0.012 50);
+
+  --primary: oklch(0.14 0.012 50);
+  --primary-foreground: oklch(0.96 0.008 65);
+
+  --secondary: oklch(0.91 0.015 62);
+  --secondary-foreground: oklch(0.18 0.012 50);
+
+  --muted: oklch(0.90 0.012 60);
+  --muted-foreground: oklch(0.45 0.015 55);
+
+  --accent: oklch(0.88 0.02 60);
+  --accent-foreground: oklch(0.18 0.012 50);
+
+  /* Gold spectrum — brushed gold to aged brass */
+  --gold: oklch(0.65 0.11 70);                     /* deep heritage gold */
+  --gold-soft: oklch(0.78 0.07 72);                /* soft warm gold */
+  --gold-bright: oklch(0.82 0.10 75);              /* bright polished gold */
+  --brass: oklch(0.58 0.09 68);                    /* aged brass */
+  --sandstone: oklch(0.75 0.04 65);                /* warm sandstone */
+
+  --destructive: oklch(0.55 0.18 27);
+  --destructive-foreground: oklch(0.96 0.008 65);
+
+  --border: oklch(0.87 0.015 62);
+  --border-strong: oklch(0.70 0.02 60);
+  --border-gold: oklch(0.65 0.08 70);
+  --input: oklch(0.87 0.015 62);
+  --ring: oklch(0.65 0.11 70);
+}
+
+/* ═══════════════════════════════════════════════════════════
+   BASE LAYER
+   ═══════════════════════════════════════════════════════════ */
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* Display headings — Cinzel for carved-stone feel */
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--gold) 40%, transparent);
+    color: var(--foreground);
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+    .ken-burns { animation: none !important; transform: scale(1.04); }
+    .marquee { animation: none !important; }
+    .wheel-spin { animation: none !important; }
+    .gold-dust-canvas { display: none !important; }
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   UTILITY CLASSES
+   ═══════════════════════════════════════════════════════════ */
+
+@layer utilities {
+
+  /* ─── Layout ─── */
+  .container-x { padding-inline: 1.25rem; }
+  @media (min-width: 640px) { .container-x { padding-inline: 2rem; } }
+  @media (min-width: 1024px) { .container-x { padding-inline: 3rem; } }
+  @media (min-width: 1280px) { .container-x { padding-inline: 4rem; } }
+
+  /* ─── Heritage Typography ─── */
+
+  /* Eyebrow labels — engraved plaque style */
+  .eyebrow {
+    font-family: var(--font-label);
+    font-size: 0.7rem;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--muted-foreground);
+  }
+  .eyebrow-gold {
+    color: var(--gold);
+  }
+
+  /* Shloka kicker — verse-cadence inscription */
+  .shloka-kicker {
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    line-height: 1.6;
+    color: var(--gold-soft);
+    opacity: 0.85;
+  }
+
+  /* Font families as utilities */
+  .font-display-decorative { font-family: var(--font-display-decorative); }
+  .font-heading { font-family: var(--font-heading); }
+  .font-body { font-family: var(--font-body); }
+  .font-label { font-family: var(--font-label); }
+
+  /* Gold gradient text */
+  .gold-gradient-text {
+    background: linear-gradient(135deg, var(--gold-bright) 0%, var(--gold) 40%, var(--brass) 70%, var(--gold-soft) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Kerning & numerals */
+  .kerning-tight { letter-spacing: -0.025em; }
+  .kerning-wide { letter-spacing: 0.06em; }
+  .num { font-variant-numeric: tabular-nums; }
+
+  /* ─── Decorative Lines & Rules ─── */
+
+  .rule {
+    display: inline-block;
+    width: 2.5rem;
+    height: 1px;
+    background: var(--gold);
+    vertical-align: middle;
+    margin-right: 0.875rem;
+    opacity: 0.7;
+  }
+
+  .gold-underline {
+    background-image: linear-gradient(to right, var(--gold), var(--gold));
+    background-size: 100% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 2px;
+  }
+
+  .gold-border-top { border-top: 1px solid var(--border-gold); }
+  .gold-border-bottom { border-bottom: 1px solid var(--border-gold); }
+
+  /* ─── Stone & Texture Backgrounds ─── */
+
+  /* Subtle grain — carved stone noise */
+  .bg-grain {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    background-size: 200px 200px;
+  }
+
+  .bg-grain-dark {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.06'/%3E%3C/svg%3E");
+    background-size: 200px 200px;
+  }
+
+  /* Jali lattice pattern — Jain temple inspired */
+  .bg-jali {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 L55 30 L30 55 L5 30 Z' fill='none' stroke='%23C4A469' stroke-width='0.5' opacity='0.12'/%3E%3Ccircle cx='30' cy='30' r='8' fill='none' stroke='%23C4A469' stroke-width='0.3' opacity='0.08'/%3E%3C/svg%3E");
+    background-size: 60px 60px;
+  }
+
+  .bg-jali-dark {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 L55 30 L30 55 L5 30 Z' fill='none' stroke='%23C4A469' stroke-width='0.5' opacity='0.06'/%3E%3Ccircle cx='30' cy='30' r='8' fill='none' stroke='%23C4A469' stroke-width='0.3' opacity='0.04'/%3E%3C/svg%3E");
+    background-size: 60px 60px;
+  }
+
+  /* Lotus medallion pattern */
+  .bg-lotus {
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='40' cy='40' rx='12' ry='20' fill='none' stroke='%23C4A469' stroke-width='0.4' opacity='0.06' transform='rotate(0 40 40)'/%3E%3Cellipse cx='40' cy='40' rx='12' ry='20' fill='none' stroke='%23C4A469' stroke-width='0.4' opacity='0.06' transform='rotate(45 40 40)'/%3E%3Cellipse cx='40' cy='40' rx='12' ry='20' fill='none' stroke='%23C4A469' stroke-width='0.4' opacity='0.06' transform='rotate(90 40 40)'/%3E%3Cellipse cx='40' cy='40' rx='12' ry='20' fill='none' stroke='%23C4A469' stroke-width='0.4' opacity='0.06' transform='rotate(135 40 40)'/%3E%3C/svg%3E");
+    background-size: 80px 80px;
+  }
+
+  /* ─── Hover & Interaction ─── */
+
+  .hover-rise {
+    transition: transform .5s cubic-bezier(.2,.7,.2,1), box-shadow .5s;
+  }
+  .hover-rise:hover { transform: translateY(-4px); }
+
+  .img-zoom { transition: transform 1.4s cubic-bezier(.2,.7,.2,1); }
+  .group:hover .img-zoom { transform: scale(1.06); }
+
+  /* Gold shimmer sweep on hover */
+  .gold-shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+  .gold-shimmer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, rgba(196,164,105,0.15) 50%, transparent 100%);
+    transition: left 0.6s cubic-bezier(.2,.7,.2,1);
+  }
+  .gold-shimmer:hover::after {
+    left: 100%;
+  }
+
+  /* Gold pulsing glow */
+  .gold-pulse {
+    animation: gold-pulse 2.5s ease-in-out infinite;
+  }
+
+  /* ─── Scroll Reveal System ─── */
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition:
+      opacity 1.2s cubic-bezier(.2,.7,.2,1),
+      transform 1.2s cubic-bezier(.2,.7,.2,1);
+  }
+  .reveal.in { opacity: 1; transform: none; }
+  .reveal-delay-1 { transition-delay: .1s; }
+  .reveal-delay-2 { transition-delay: .2s; }
+  .reveal-delay-3 { transition-delay: .3s; }
+  .reveal-delay-4 { transition-delay: .4s; }
+
+  /* Blur-to-focus reveal */
+  .reveal-blur {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(20px);
+    transition:
+      opacity 1.4s cubic-bezier(.2,.7,.2,1),
+      filter 1.4s cubic-bezier(.2,.7,.2,1),
+      transform 1.4s cubic-bezier(.2,.7,.2,1);
+  }
+  .reveal-blur.in {
+    opacity: 1;
+    filter: blur(0);
+    transform: none;
+  }
+
+  /* Engrave/carve-in reveal */
+  .reveal-engrave {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+    transition:
+      opacity 0.8s cubic-bezier(.2,.7,.2,1),
+      transform 0.8s cubic-bezier(.2,.7,.2,1);
+  }
+  .reveal-engrave.in { opacity: 1; transform: none; }
+
+  /* ─── Animations ─── */
+
+  .marquee {
+    animation: marquee 40s linear infinite;
+  }
+
+  .ken-burns { animation: ken-burns 18s ease-out forwards; }
+
+  .wheel-spin { animation: wheel-spin 3s cubic-bezier(.4,0,.2,1) forwards; }
+  .wheel-spin-slow { animation: wheel-spin-slow 20s linear infinite; }
+
+  .chisel-draw { animation: chisel-draw 1.2s cubic-bezier(.4,0,.2,1) forwards; }
+
+  .engrave-in { animation: engrave-in 0.8s cubic-bezier(.2,.7,.2,1) forwards; }
+
+  .fade-up { animation: fade-up 1.2s cubic-bezier(.2,.7,.2,1) forwards; }
+
+  .lotus-bloom { animation: lotus-bloom 2s cubic-bezier(.2,.7,.2,1) forwards; }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   KEYFRAMES
+   ═══════════════════════════════════════════════════════════ */
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes ken-burns {
+  from { transform: scale(1.08) translateY(0); }
+  to { transform: scale(1.18) translateY(-2%); }
+}
+
+/* Dharma wheel / chariot wheel rotation */
+@keyframes wheel-spin {
+  0% { transform: rotate(0deg) scale(0.8); opacity: 0; }
+  30% { opacity: 1; }
+  100% { transform: rotate(360deg) scale(1); opacity: 1; }
+}
+
+@keyframes wheel-spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Chisel stroke — gold line drawing left to right */
+@keyframes chisel-draw {
+  from { width: 0; opacity: 0; }
+  to { width: 100%; opacity: 1; }
+}
+
+/* Engraving appearance */
+@keyframes engrave-in {
+  0% { opacity: 0; transform: translateY(8px) scale(0.97); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes fade-up {
+  0% { opacity: 0; transform: translateY(24px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Gold pulse glow */
+@keyframes gold-pulse {
+  0%, 100% { box-shadow: 0 0 8px rgba(196,164,105,0.2), 0 0 20px rgba(196,164,105,0.05); }
+  50% { box-shadow: 0 0 16px rgba(196,164,105,0.4), 0 0 40px rgba(196,164,105,0.1); }
+}
+
+/* Lotus petal bloom */
+@keyframes lotus-bloom {
+  0% { transform: scale(0.5) rotate(-30deg); opacity: 0; }
+  60% { transform: scale(1.05) rotate(5deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+/* Panel curtain slide (section over section) */
+@keyframes panel-slide-up {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+/* Fade-in with optional delay (base) */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Blur-to-sharp */
+@keyframes blur-focus {
+  0% { filter: blur(12px); opacity: 0; transform: translateY(16px); }
+  100% { filter: blur(0); opacity: 1; transform: translateY(0); }
+}
+
+/* Stagger nav items */
+@keyframes nav-enter {
+  0% { opacity: 0; transform: translateY(-8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   COMPONENT-SPECIFIC OVERRIDES
+   ═══════════════════════════════════════════════════════════ */
+
+/* Preloader */
+.preloader-active body {
+  overflow: hidden;
+}
+
+/* Carved frame corners */
+.carved-corner {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(.2,.7,.2,1);
+}
+.carved-corner::before,
+.carved-corner::after {
+  content: '';
+  position: absolute;
+  background: var(--gold);
+}
+.carved-corner::before {
+  width: 100%;
+  height: 1px;
+}
+.carved-corner::after {
+  width: 1px;
+  height: 100%;
+}
+
+.carved-corner-tl { top: -4px; left: -4px; }
+.carved-corner-tl::before { top: 0; left: 0; }
+.carved-corner-tl::after { top: 0; left: 0; }
+
+.carved-corner-tr { top: -4px; right: -4px; }
+.carved-corner-tr::before { top: 0; right: 0; }
+.carved-corner-tr::after { top: 0; right: 0; }
+
+.carved-corner-bl { bottom: -4px; left: -4px; }
+.carved-corner-bl::before { bottom: 0; left: 0; }
+.carved-corner-bl::after { bottom: 0; left: 0; }
+
+.carved-corner-br { bottom: -4px; right: -4px; }
+.carved-corner-br::before { bottom: 0; right: 0; }
+.carved-corner-br::after { bottom: 0; right: 0; }
+
+.group:hover .carved-corner,
+.carved-frame-hover:hover .carved-corner {
+  opacity: 1;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--basalt); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold-bright); }
+html { scrollbar-color: var(--gold) var(--basalt); scrollbar-width: thin; }
+
+/* Select/form overrides for heritage feel */
+select {
+  font-family: var(--font-label);
+}
+input, textarea {
+  font-family: var(--font-body);
+}
