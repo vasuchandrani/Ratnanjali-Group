@@ -19,7 +19,7 @@ export function Hero() {
 
   return (
     <>
-      <section className="relative min-h-screen lg:h-screen lg:min-h-[750px] w-full overflow-hidden bg-basalt text-white">
+      <section className="relative min-h-screen lg:h-screen lg:min-h-[580px] w-full overflow-hidden bg-basalt text-white">
         {/* Background Video */}
         <div className="absolute inset-0">
           <video
@@ -53,7 +53,7 @@ export function Hero() {
         </div>
 
         {/* Content */}
-        <div className="container-x relative z-10 mx-auto flex min-h-screen lg:h-full max-w-[1400px] flex-col justify-end pb-24 pt-40 lg:pb-32 lg:pt-36">
+        <div className="container-x relative z-10 mx-auto flex min-h-screen lg:h-full max-w-[1400px] flex-col justify-end pb-20 pt-32 lg:pb-16 lg:pt-24">
           <div className="grid gap-12 lg:grid-cols-12 lg:items-end">
             {/* Main Hero Column */}
             <div className="lg:col-span-7">

@@ -45,7 +45,7 @@ export function Expertise() {
                 key={s.title}
                 onMouseEnter={() => setActiveIdx(idx)}
                 onFocus={() => setActiveIdx(idx)}
-                className={`relative font-display text-2xl sm:text-3xl lg:text-3xl xl:text-4xl tracking-wide transition-all duration-500 cursor-pointer ${
+                className={`relative font-display text-xl sm:text-2xl lg:text-2xl xl:text-3xl whitespace-nowrap tracking-wide transition-all duration-500 cursor-pointer ${
                   activeIdx === idx 
                     ? "gold-gradient-text font-semibold scale-105" 
                     : "text-foreground/45 hover:text-foreground/80"
