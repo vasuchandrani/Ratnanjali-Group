@@ -89,14 +89,14 @@ export function Hero() {
               <div className="mt-8 flex flex-wrap items-center gap-5 opacity-0 animate-[fade-up_0.8s_ease-out_1.1s_forwards]">
                 <Link
                   to="/projects"
-                  className="group inline-flex items-center gap-3 border border-gold/40 bg-gold/10 text-gold-soft px-8 py-4 font-label text-[11px] font-medium uppercase tracking-[0.24em] transition-all gold-shimmer hover:bg-gold/20 hover:border-gold/60"
+                  className="group inline-flex items-center gap-3 border border-gold/80 bg-gold/20 text-gold px-8 py-4 font-display text-[11px] font-bold uppercase tracking-[0.24em] transition-all gold-shimmer hover:bg-gold/30 hover:border-gold"
                 >
                   Explore Portfolio
                   <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
                 </Link>
                 <Link
                   to="/contact"
-                  className="group inline-flex items-center gap-3 border border-white/20 text-white/80 px-8 py-4 font-label text-[11px] font-medium uppercase tracking-[0.24em] transition-all hover:bg-white/5 hover:border-white/40"
+                  className="group inline-flex items-center gap-3 border border-white/60 bg-white/10 text-white px-8 py-4 font-display text-[11px] font-bold uppercase tracking-[0.24em] transition-all hover:bg-white/20 hover:border-white"
                 >
                   Schedule a Visit
                 </Link>

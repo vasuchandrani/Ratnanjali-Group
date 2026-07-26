@@ -50,7 +50,7 @@ export function ProudProjects() {
   const activeDot = idx % list.length;
 
   return (
-    <section className="relative bg-background py-28 lg:py-40 overflow-hidden">
+    <section className="relative bg-background pt-28 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
       <div className="absolute inset-0 bg-grain pointer-events-none" />
 
       <div className="container-x relative mx-auto max-w-[1400px]">

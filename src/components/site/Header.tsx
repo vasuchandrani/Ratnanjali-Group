@@ -57,12 +57,12 @@ export function Header() {
             >
               {({ isActive }) => (
                 <span
-                  className={`group relative font-label text-[14px] uppercase tracking-[0.2em] transition-colors duration-300 ${
+                  className={`group relative font-display font-bold text-[13px] uppercase tracking-[0.2em] transition-colors duration-300 ${
                     isActive
-                      ? "text-gold font-semibold"
+                      ? "text-gold"
                       : scrolled
-                      ? "text-stone-dark/80 hover:text-stone-dark"
-                      : "text-gold-soft/70 hover:text-gold-soft"
+                      ? "text-stone-dark/90 hover:text-stone-dark"
+                      : "text-gold-soft/90 hover:text-gold-soft"
                   }`}
                 >
                   {n.label}
@@ -81,7 +81,7 @@ export function Header() {
         {/* Enquire CTA */}
         <Link
           to="/contact"
-          className={`hidden items-center gap-2 border px-6 py-2.5 font-label text-[13px] uppercase tracking-[0.24em] transition-all duration-300 lg:inline-flex ${
+          className={`hidden items-center gap-2 border px-6 py-2.5 font-display font-bold text-[12px] uppercase tracking-[0.24em] transition-all duration-300 lg:inline-flex ${
             scrolled
               ? "border-stone-dark/30 text-stone-dark hover:border-stone-dark/60 hover:bg-stone-dark/5"
               : "border-gold/30 text-gold-soft gold-shimmer hover:border-gold/60 hover:bg-gold/5"
@@ -119,12 +119,12 @@ export function Header() {
             >
               {({ isActive }) => (
                 <div
-                  className={`py-3 font-label text-sm uppercase tracking-[0.18em] transition-colors ${
+                  className={`py-3 font-display font-bold text-[13px] uppercase tracking-[0.18em] transition-colors ${
                     isActive
-                      ? "text-gold font-semibold"
+                      ? "text-gold"
                       : scrolled
-                      ? "text-stone-dark/80 hover:text-stone-dark"
-                      : "text-gold-soft/70 hover:text-gold-soft"
+                      ? "text-stone-dark/90 hover:text-stone-dark"
+                      : "text-gold-soft/90 hover:text-gold-soft"
                   }`}
                 >
                   {n.label}
@@ -134,7 +134,7 @@ export function Header() {
           ))}
           <Link
             to="/contact"
-            className={`mt-3 inline-flex items-center justify-center border px-5 py-3 font-label text-[12px] uppercase tracking-[0.24em] transition-all ${
+            className={`mt-3 inline-flex items-center justify-center border px-5 py-3 font-display font-bold text-[11px] uppercase tracking-[0.24em] transition-all ${
               scrolled
                 ? "border-stone-dark/30 text-stone-dark hover:bg-stone-dark/5"
                 : "border-gold/30 text-gold-soft hover:bg-gold/10"

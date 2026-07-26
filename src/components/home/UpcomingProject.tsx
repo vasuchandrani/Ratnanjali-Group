@@ -9,7 +9,7 @@ export function UpcomingProject() {
   const { upcomingProject } = homeData;
 
   return (
-    <section className="relative overflow-hidden bg-background py-28 text-foreground lg:py-40 border-t border-border/40">
+    <section className="relative overflow-hidden bg-background pt-20 pb-28 text-foreground lg:pt-32 lg:pb-40 border-t border-border/40">
       {/* Background textures */}
       <div className="absolute inset-0 bg-grain pointer-events-none" />
       <div className="absolute inset-0 bg-jali pointer-events-none opacity-40" />

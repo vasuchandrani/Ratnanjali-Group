@@ -142,9 +142,10 @@ export function ProjectDetailPage({ project }: ProjectDetailPageProps) {
                             <div className="font-body text-sm font-semibold">Project Brochure</div>
                           </div>
                           <a
-                            href={project.brochure}
-                            download
-                            className="inline-flex items-center gap-2 px-4 py-2 border border-gold/30 hover:border-gold/60 text-[10px] font-label uppercase tracking-wider text-gold-soft hover:bg-gold/10 transition-all duration-300 rounded-sm"
+                            href="https://ratnanjaligroup.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-4 py-2 border border-gold/60 bg-gold/10 text-gold font-display text-[10px] font-bold uppercase tracking-wider hover:bg-gold/20 hover:border-gold transition-all duration-300 rounded-sm"
                           >
                             Download <Download size={12} />
                           </a>

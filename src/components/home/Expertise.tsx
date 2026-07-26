@@ -20,19 +20,19 @@ export function Expertise() {
           <Reveal>
             <div className="eyebrow eyebrow-gold mb-4 justify-center flex items-center">
               <span className="rule" />
-              Development Expertise
+              Our Philosophy
               <span className="rule ml-3" />
             </div>
             <ShlokaKicker className="mb-6 justify-center flex">
-              As the wheel turns, so does vision become foundation
+              Where philosophy meets form, legacy is born
             </ShlokaKicker>
             <h2 className="font-display text-4xl leading-[1.1] sm:text-5xl lg:text-6xl tracking-wide text-foreground font-semibold">
-              Four Disciplines.
+              Four Principles.
               <br />
-              <span className="gold-gradient-text font-semibold">One Standard of Craft.</span>
+              <span className="gold-gradient-text font-semibold">One Enduring Vision.</span>
             </h2>
             <p className="mt-6 max-w-xl mx-auto font-body text-base leading-relaxed text-muted-foreground">
-              From signature residences to landmark commercial avenues, our portfolio is shaped by a singular pursuit of permanence.
+              Every landmark begins with a philosophy. Our developments are guided by four enduring principles that define every project we create.
             </p>
           </Reveal>
         </div>
@@ -97,11 +97,11 @@ export function Expertise() {
                       <span className="font-display text-lg text-gold font-semibold">{s.num}</span>
                       <span className="h-px w-8 bg-gold/50" />
                       <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-soft">
-                        Signature Domain
+                        Core Principle
                       </span>
                     </div>
                     <h3 className="font-display text-2xl sm:text-3xl lg:text-4xl tracking-wide font-semibold text-white">
-                      {s.title} Developments
+                      {s.cardTitle}
                     </h3>
                     <p className="mt-3 max-w-xl font-body text-sm leading-relaxed text-white/80">
                       {s.desc}
@@ -112,7 +112,7 @@ export function Expertise() {
                       to={s.to}
                       className="mt-6 inline-flex items-center gap-3 border border-white/40 hover:border-gold hover:bg-gold/15 px-6 py-3 font-label text-[10px] uppercase tracking-[0.25em] text-white transition-all duration-300"
                     >
-                      Explore Projects
+                      Explore Philosophy
                       <ArrowUpRight size={14} />
                     </Link>
                   </div>

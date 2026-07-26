@@ -42,10 +42,38 @@ export const homeData = {
   },
   expertise: {
     sectors: [
-      { num: "01", title: "Residential", desc: "Towering apartments and heritage villas designed around light, air and family.", img: "https://cdn.sanity.io/images/72qij255/production/c8faeff845ac36e0d3fb3e746874d9d20bc6fed1-2377x1351.jpg", to: "/projects" },
-      { num: "02", title: "Commercial", desc: "Showrooms, offices and garden workspaces at the city's most prestigious addresses.", img: "https://cdn.sanity.io/images/72qij255/production/7e4c6d81b064cb56d958e98b0e752771b3cbebf7-2846x2058.jpg", to: "/projects" },
-      { num: "03", title: "Hospitality", desc: "Weekend estates, resorts and lifestyle clubhouses immersed in nature.", img: "https://cdn.sanity.io/images/72qij255/production/156845d757ed90274f8579fad93d5584a06003d9-604x639.jpg", to: "/projects" },
-      { num: "04", title: "Mixed Use", desc: "Integrated destinations that bring living, working and leisure into one canvas.", img: "https://cdn.sanity.io/images/72qij255/production/4b17f9874aedc68d58fb3a5d3d8b6a98e1d3794f-995x660.jpg", to: "/projects" }
+      {
+        num: "01",
+        title: "Vision",
+        cardTitle: "Vision Beyond Today",
+        desc: "We design spaces with tomorrow in mind, creating developments that remain relevant for generations.",
+        img: "https://cdn.sanity.io/images/72qij255/production/c8faeff845ac36e0d3fb3e746874d9d20bc6fed1-2377x1351.jpg",
+        to: "/about"
+      },
+      {
+        num: "02",
+        title: "Craftsmanship",
+        cardTitle: "Crafted Without Compromise",
+        desc: "Every material, detail, and finish reflects our commitment to exceptional quality and timeless architecture.",
+        img: "https://cdn.sanity.io/images/72qij255/production/7e4c6d81b064cb56d958e98b0e752771b3cbebf7-2846x2058.jpg",
+        to: "/about"
+      },
+      {
+        num: "03",
+        title: "Community",
+        cardTitle: "Designed Around People",
+        desc: "Our developments create meaningful places where families, businesses, and communities can thrive together.",
+        img: "https://cdn.sanity.io/images/72qij255/production/156845d757ed90274f8579fad93d5584a06003d9-604x639.jpg",
+        to: "/about"
+      },
+      {
+        num: "04",
+        title: "Legacy",
+        cardTitle: "Built to Endure",
+        desc: "We create landmarks that become lasting symbols of excellence, value, and trust for generations to come.",
+        img: "https://cdn.sanity.io/images/72qij255/production/4b17f9874aedc68d58fb3a5d3d8b6a98e1d3794f-995x660.jpg",
+        to: "/about"
+      }
     ]
   },
   upcomingProject: {

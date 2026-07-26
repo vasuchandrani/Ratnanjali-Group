@@ -7,7 +7,7 @@ export const aboutData = {
   ourStory: {
     title: "Our Story",
     description: "Ratnanjali Group began with a simple conviction: that a building must outlive trends. Over two decades, that conviction has shaped a portfolio of residences, commercial avenues and weekend estates across Ahmedabad — quietly establishing a reputation for considered architecture, honest construction and timely delivery.",
-    coverImage: "https://cdn.sanity.io/images/72qij255/production/7840ea4f4b71309c33bb18bc73cde69210a4b84e-1032x725.png"
+    coverImage: "https://cdn.sanity.io/images/72qij255/production/8efa5008970dc6ad3000efa8be89c14c5728c9bc-785x1024.jpg"
   },
   missionVision: {
     mission: {

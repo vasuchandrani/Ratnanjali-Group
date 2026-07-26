@@ -25,23 +25,25 @@ export function ProjectsPage() {
         </div>
 
         <div className="container-x relative z-10 mx-auto max-w-[1400px] flex flex-col items-center justify-center text-center">
-          <Reveal>
-            <div className="flex items-center justify-center gap-5 mb-4">
+          <div className="flex flex-col items-center justify-center">
+            <div className="flex items-center justify-center gap-5 mb-4 opacity-0 animate-[fade-up_0.8s_ease-out_.3s_forwards]">
               <span className="h-px w-10 bg-gold/40" />
               <span className="eyebrow eyebrow-gold">Portfolio</span>
               <span className="h-px w-10 bg-gold/40" />
             </div>
-            <ShlokaKicker light className="mb-6">
-              A chronicle of landmarks, inscribed in the city's memory
-            </ShlokaKicker>
-            <h1 className="max-w-4xl font-display text-5xl leading-[1.02] sm:text-6xl lg:text-7xl tracking-wide text-gold-soft font-semibold">
+            <div className="opacity-0 animate-[fade-up_0.8s_ease-out_.5s_forwards] w-full flex justify-center">
+              <ShlokaKicker light className="mb-6">
+                A chronicle of landmarks, inscribed in the city's memory
+              </ShlokaKicker>
+            </div>
+            <h1 className="max-w-4xl font-display text-5xl leading-[1.02] sm:text-6xl lg:text-7xl tracking-wide text-gold-soft font-semibold opacity-0 animate-[fade-up_1s_ease-out_.6s_forwards]">
               Landmark Developments
             </h1>
-            <p className="mt-6 max-w-xl mx-auto font-body text-base leading-[1.7] text-gold-soft/60 sm:text-lg">
+            <p className="mt-6 max-w-xl mx-auto font-body text-base leading-[1.7] text-gold-soft/60 sm:text-lg opacity-0 animate-[fade-up_0.8s_ease-out_.9s_forwards]">
               Architectural masterpieces designed to outlive trends.
             </p>
-          </Reveal>
-          <div className="mt-12 w-full max-w-md mx-auto">
+          </div>
+          <div className="mt-12 w-full max-w-md mx-auto opacity-0 animate-[fade-in_1.2s_ease-out_1.2s_forwards]">
             <HeritageDivider variant="chakra" />
           </div>
         </div>
@@ -61,7 +63,7 @@ export function ProjectsPage() {
                 >
                   {/* Image Column */}
                   <div className={`lg:col-span-7 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
-                    <Reveal>
+                    <Reveal variant="blur">
                       <Link
                         to="/projects/$slug"
                         params={{ slug: project.slug }}
@@ -87,9 +89,25 @@ export function ProjectsPage() {
 
                   {/* Content Column */}
                   <div className={`lg:col-span-5 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
-                    <Reveal>
+                    <Reveal variant="blur" delay={1}>
                       <div className="space-y-6 lg:space-y-8">
-                        {/* Category eyebrow */}
+                        {/* Title & Tagline Group */}
+                        <div className="space-y-2">
+                          <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.1] text-foreground tracking-wide font-semibold">
+                            <Link 
+                              to="/projects/$slug"
+                              params={{ slug: project.slug }}
+                              className="hover:text-gold transition-colors duration-300"
+                            >
+                              {project.name}
+                            </Link>
+                          </h2>
+                          <p className="font-heading text-xl sm:text-2xl italic text-gold-soft">
+                            {project.tagline}
+                          </p>
+                        </div>
+
+                        {/* Category & Location eyebrow */}
                         <div className="flex items-center gap-3">
                           <span className="font-label text-[11px] uppercase tracking-[0.25em] text-gold font-semibold">
                             {project.categoryLabel}
@@ -99,22 +117,6 @@ export function ProjectsPage() {
                             {project.location}
                           </span>
                         </div>
-
-                        {/* Title */}
-                        <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.1] text-foreground tracking-wide font-semibold">
-                          <Link 
-                            to="/projects/$slug"
-                            params={{ slug: project.slug }}
-                            className="hover:text-gold transition-colors duration-300"
-                          >
-                            {project.name}
-                          </Link>
-                        </h2>
-
-                        {/* Tagline */}
-                        <p className="font-heading text-xl sm:text-2xl italic text-gold-soft">
-                          {project.tagline}
-                        </p>
 
                         {/* Description */}
                         <p className="font-body text-base leading-[1.85] text-muted-foreground/90">
@@ -126,7 +128,7 @@ export function ProjectsPage() {
                           <Link
                             to="/projects/$slug"
                             params={{ slug: project.slug }}
-                            className="group inline-flex items-center gap-2 border border-gold/30 px-8 py-4 font-label text-[11px] uppercase tracking-[0.2em] text-gold-soft hover:bg-gold/10 hover:border-gold/60 transition-all duration-300 rounded-sm"
+                            className="group inline-flex items-center gap-2 border border-gold/60 bg-gold/5 px-8 py-4 font-display text-[11px] font-bold uppercase tracking-[0.2em] text-gold hover:bg-gold/15 hover:border-gold transition-all duration-300 rounded-sm"
                           >
                             Explore Project
                             <ArrowRight size={12} className="transition-transform group-hover:translate-x-1" />
@@ -134,9 +136,10 @@ export function ProjectsPage() {
 
                           {project.brochure && (
                             <a
-                              href={project.brochure}
-                              download
-                              className="inline-flex items-center gap-2 border border-white/10 px-8 py-4 font-label text-[11px] uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground hover:bg-white/5 hover:border-white/20 transition-all duration-300 rounded-sm"
+                              href="https://ratnanjaligroup.com"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-2 border border-stone-dark/30 bg-stone-soft/20 px-8 py-4 font-display text-[11px] font-bold uppercase tracking-[0.2em] text-stone-dark hover:text-stone-dark hover:bg-stone-soft/40 hover:border-stone-dark/50 transition-all duration-300 rounded-sm"
                             >
                               Download Brochure
                               <Download size={12} />
