@@ -5,6 +5,7 @@ import { aboutData } from "@/data/about";
 import { ShlokaKicker } from "@/components/heritage/ShlokaKicker";
 import { HeritageDivider } from "@/components/heritage/HeritageDivider";
 import { DharmaWheel } from "@/components/heritage/DharmaWheel";
+import { ScrollIndicator } from "@/components/site/ScrollIndicator";
 
 /* Timeline milestones */
 const timeline = [
@@ -92,6 +93,7 @@ export function AboutPage() {
             <HeritageDivider variant="chakra" />
           </div>
         </div>
+        <ScrollIndicator />
       </section>
 
       {/* Story + Founders */}

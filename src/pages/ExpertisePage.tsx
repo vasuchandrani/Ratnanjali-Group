@@ -2,6 +2,7 @@ import { PageShell } from "@/components/site/PageShell";
 import { Reveal } from "@/components/site/RevealOnScroll";
 import { ShlokaKicker } from "@/components/heritage/ShlokaKicker";
 import { HeritageDivider } from "@/components/heritage/HeritageDivider";
+import { ScrollIndicator } from "@/components/site/ScrollIndicator";
 import {
   Compass,
   Gem,
@@ -143,6 +144,7 @@ export function ExpertisePage() {
             <HeritageDivider variant="chakra" />
           </div>
         </div>
+        <ScrollIndicator />
       </section>
 
       <section className="py-12 lg:py-20 bg-background">

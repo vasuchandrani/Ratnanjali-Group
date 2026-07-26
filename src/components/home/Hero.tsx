@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, ArrowDown } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { homeData } from "@/data/home";
+import { ScrollIndicator } from "@/components/site/ScrollIndicator";
 import { GoldDustParticles } from "@/components/heritage/GoldDustParticles";
 import { useRef, useEffect } from "react";
 
@@ -105,13 +106,8 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Scroll cue — dharma wheel dot */}
-        <div className="absolute bottom-6 left-1/2 z-10 -translate-x-1/2 opacity-0 animate-[fade-in_1.6s_ease-out_2s_forwards]">
-          <div className="flex flex-col items-center gap-2">
-            <ArrowDown size={16} className="text-gold-soft/50 animate-bounce" />
-            <span className="font-label text-[8px] font-medium uppercase tracking-[0.3em] text-gold/30">Scroll</span>
-          </div>
-        </div>
+        {/* Scroll cue */}
+        <ScrollIndicator />
       </section>
     </>
   );

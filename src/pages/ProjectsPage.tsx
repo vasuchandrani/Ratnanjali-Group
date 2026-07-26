@@ -4,6 +4,7 @@ import { projects } from "@/data/projects";
 import { Reveal } from "@/components/site/RevealOnScroll";
 import { ShlokaKicker } from "@/components/heritage/ShlokaKicker";
 import { HeritageDivider } from "@/components/heritage/HeritageDivider";
+import { ScrollIndicator } from "@/components/site/ScrollIndicator";
 import { ArrowRight, Download } from "lucide-react";
 
 export function ProjectsPage() {
@@ -50,6 +51,7 @@ export function ProjectsPage() {
             <HeritageDivider variant="chakra" />
           </div>
         </div>
+        <ScrollIndicator />
       </section>
 
       {/* Alternating projects list */}

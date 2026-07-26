@@ -4,6 +4,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import { contactData } from "@/data/contact";
 import { ShlokaKicker } from "@/components/heritage/ShlokaKicker";
 import { HeritageDivider } from "@/components/heritage/HeritageDivider";
+import { ScrollIndicator } from "@/components/site/ScrollIndicator";
 
 export function ContactPage() {
   const { hero, form, office } = contactData;
@@ -43,6 +44,7 @@ export function ContactPage() {
             <HeritageDivider variant="chakra" />
           </div>
         </div>
+        <ScrollIndicator />
       </section>
 
       {/* Form + Office */}
