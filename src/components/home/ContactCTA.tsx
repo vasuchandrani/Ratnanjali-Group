@@ -13,7 +13,7 @@ export function ContactCTA() {
       <img
         src={contactCta.bgImage}
         alt=""
-        className="absolute inset-0 -z-10 h-full w-full object-cover opacity-60 blur-[20px] scale-105"
+        className="absolute inset-0 -z-10 h-full w-full object-cover opacity-60 blur-[5px] scale-105"
         loading="lazy"
       />
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-basalt/70 via-basalt/45 to-basalt/25" />
