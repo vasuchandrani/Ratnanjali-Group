@@ -10,7 +10,6 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
   return (
@@ -37,9 +36,6 @@ function NotFoundComponent() {
 function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   console.error(error);
   const router = useRouter();
-  useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
-  }, [error]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-basalt px-4">
@@ -110,12 +106,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         {
           property: "og:image",
           content:
-            "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6c8eaec9-3140-47f9-b878-4ba999f37827/id-preview-b385cd98--10d7a54c-14b9-41c4-aa4a-c6b30b1c234c.lovable.app-1781714894466.png",
+            "https://cdn.sanity.io/images/72qij255/production/f2026833e1c3cc1bbec89d195d7cfa4267b47a05-622x350.jpg",
         },
         {
           name: "twitter:image",
           content:
-            "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6c8eaec9-3140-47f9-b878-4ba999f37827/id-preview-b385cd98--10d7a54c-14b9-41c4-aa4a-c6b30b1c234c.lovable.app-1781714894466.png",
+            "https://cdn.sanity.io/images/72qij255/production/f2026833e1c3cc1bbec89d195d7cfa4267b47a05-622x350.jpg",
         },
       ],
       links: [

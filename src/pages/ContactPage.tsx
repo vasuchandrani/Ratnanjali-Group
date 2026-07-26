@@ -17,10 +17,10 @@ export function ContactPage() {
           <img
             src="https://cdn.sanity.io/images/72qij255/production/f2026833e1c3cc1bbec89d195d7cfa4267b47a05-622x350.jpg"
             alt="Cover background"
-            className="h-full w-full object-cover opacity-25 blur-[10px] scale-105"
+            className="h-full w-full object-cover opacity-60 blur-[10px] scale-105"
           />
           {/* Dark overlays */}
-          <div className="absolute inset-0 bg-gradient-to-b from-basalt/80 via-basalt/60 to-basalt/95" />
+          <div className="absolute inset-0 bg-gradient-to-b from-basalt/60 via-basalt/30 to-basalt/80" />
           <div className="absolute inset-0 bg-grain-dark pointer-events-none" />
           <div className="absolute inset-0 bg-jali-dark pointer-events-none opacity-15" />
         </div>
