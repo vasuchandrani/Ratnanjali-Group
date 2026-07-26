@@ -67,6 +67,6 @@ export const homeData = {
     videoUrl: "https://cdn.sanity.io/files/72qij255/production/eceb870ee451a6d05743a841f02b13293013646e.mp4"
   },
   contactCta: {
-    bgImage: "https://cdn.sanity.io/images/72qij255/production/23c97cf4dad7ff0c05ec2a4ec4bfdb5ceac6ab76-1920x1080.jpg"
+    bgImage: "https://cdn.sanity.io/images/72qij255/production/bc10e6f5aff864283509c1c27cd552444ee1fea5-2560x1420.jpg"
   }
 };

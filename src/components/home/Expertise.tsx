@@ -39,13 +39,13 @@ export function Expertise() {
 
         {/* 4 Names Navigation */}
         <Reveal delay={1} className="w-full">
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 md:gap-x-12 lg:gap-x-16 border-b border-gold/15 pb-8 mb-12">
+          <div className="flex flex-wrap lg:flex-nowrap items-center justify-center gap-x-8 gap-y-4 md:gap-x-12 lg:gap-x-8 xl:gap-x-16 border-b border-gold/15 pb-8 mb-12">
             {expertise.sectors.map((s, idx) => (
               <button
                 key={s.title}
                 onMouseEnter={() => setActiveIdx(idx)}
                 onFocus={() => setActiveIdx(idx)}
-                className={`relative font-display text-2xl sm:text-3xl lg:text-4xl tracking-wide transition-all duration-500 cursor-pointer ${
+                className={`relative font-display text-2xl sm:text-3xl lg:text-3xl xl:text-4xl tracking-wide transition-all duration-500 cursor-pointer ${
                   activeIdx === idx 
                     ? "gold-gradient-text font-semibold scale-105" 
                     : "text-foreground/45 hover:text-foreground/80"

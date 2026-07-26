@@ -117,7 +117,7 @@ export function ExpertisePage() {
           <img
             src="https://cdn.sanity.io/images/72qij255/production/f2026833e1c3cc1bbec89d195d7cfa4267b47a05-622x350.jpg"
             alt="Cover background"
-            className="h-full w-full object-cover opacity-60 blur-[10px] scale-105"
+            className="h-full w-full object-cover opacity-60 blur-[5px] scale-105"
           />
           {/* Dark overlays */}
           <div className="absolute inset-0 bg-gradient-to-b from-basalt/60 via-basalt/30 to-basalt/80" />

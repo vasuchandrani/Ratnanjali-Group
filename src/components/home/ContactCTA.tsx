@@ -13,10 +13,10 @@ export function ContactCTA() {
       <img
         src={contactCta.bgImage}
         alt=""
-        className="absolute inset-0 -z-10 h-full w-full object-cover opacity-30"
+        className="absolute inset-0 -z-10 h-full w-full object-cover opacity-60"
         loading="lazy"
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-basalt/95 via-basalt/80 to-basalt/60" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-t from-basalt/70 via-basalt/45 to-basalt/25" />
       <div className="absolute inset-0 -z-10 bg-grain-dark" />
 
       {/* Abstract geometric mark — Sikh "seva/community" inspired */}
