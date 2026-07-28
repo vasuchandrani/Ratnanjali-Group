@@ -6,5 +6,6 @@ export const commonData = {
     facebook: "#",
     instagram: "#",
     linkedin: "#"
-  }
+  },
+  whatsapp: "9265102232"
 };

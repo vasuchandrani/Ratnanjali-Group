@@ -5,7 +5,7 @@ import { Reveal } from "@/components/site/RevealOnScroll";
 import { ShlokaKicker } from "@/components/heritage/ShlokaKicker";
 import { HeritageDivider } from "@/components/heritage/HeritageDivider";
 import { ScrollIndicator } from "@/components/site/ScrollIndicator";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, Download, MapPin } from "lucide-react";
 
 export function ProjectsPage() {
   // Toggle to easily turn off the scroll slide animations on project items if needed in the future
@@ -127,9 +127,21 @@ export function ProjectsPage() {
                             <span className="block font-label text-[9px] uppercase tracking-[0.2em] text-muted-foreground/60 mb-1">
                               Location
                             </span>
-                            <span className="font-body text-[11px] font-semibold text-foreground/80 leading-snug block whitespace-pre-line">
-                              {project.location.replace(", ", ",\n")}
-                            </span>
+                            {project.mapLink ? (
+                              <a
+                                href={project.mapLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group/loc flex items-start gap-1.5 font-body text-[11px] font-semibold text-foreground/80 leading-snug whitespace-pre-line hover:text-gold transition-colors duration-300"
+                              >
+                                <MapPin size={12} className="text-gold/60 group-hover/loc:text-gold transition-colors duration-300 mt-0.5 shrink-0" />
+                                <span>{project.location.replace(", ", ",\n")}</span>
+                              </a>
+                            ) : (
+                              <span className="font-body text-[11px] font-semibold text-foreground/80 leading-snug block whitespace-pre-line">
+                                {project.location.replace(", ", ",\n")}
+                              </span>
+                            )}
                           </div>
                           <div>
                             <span className="block font-label text-[9px] uppercase tracking-[0.2em] text-muted-foreground/60 mb-1">

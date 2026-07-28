@@ -22,6 +22,7 @@ export interface Project {
   description: string;
   highlights: string[];
   brochure?: string;
+  mapLink?: string;
 }
 
 export const projects: Project[] = [
@@ -46,6 +47,7 @@ export const projects: Project[] = [
       "A maverick residential project featuring five iconic towers, private foyers, and a comprehensive clubhouse — built for the modern royals.",
     highlights: ["5 Iconic Towers", "Private Foyer Per Unit", "60+ Amenities", "2 Cars Per Apartment"],
     brochure: "/brochures/hastinapur.pdf",
+    mapLink: "https://maps.app.goo.gl/LBWaQ8nKFRvAafpf9",
   },
   {
     slug: "ratnanjali-square",
@@ -66,6 +68,7 @@ export const projects: Project[] = [
       "A spectacular glass-and-greenery business landmark in Prahladnagar — high-end showrooms, private garden offices, and a grand foyer that exudes prestige.",
     highlights: ["Glass Façade with Sky Gardens", "Private Garden Offices", "High-End Showrooms", "Grand Entrance Foyer"],
     brochure: "/brochures/ratnanjali-square.pdf",
+    mapLink: "https://maps.app.goo.gl/LBWaQ8nKFRvAafpf9",
   },
   {
     slug: "ratnanjali-solitaire",
@@ -86,6 +89,7 @@ export const projects: Project[] = [
       "A swanky new-age business complex at the PDR crossroads — a signature edifice with hanging office spaces, spacious balconies, and green pockets throughout.",
     highlights: ["Hanging Architect Office", "Maximum Visibility", "Strategic PDR Location", "Multi-Format Retail"],
     brochure: "/brochures/ratnanjali-solitaire.pdf",
+    mapLink: "https://maps.app.goo.gl/LBWaQ8nKFRvAafpf9",
   },
   {
     slug: "ayodhya",
@@ -106,6 +110,7 @@ export const projects: Project[] = [
       "A one-of-a-kind sustainable weekend estate — heritage pool villas, a 60,000 sq.ft. clubhouse, lake lagoon, Nakshatra Van, and an organic, vehicle-free township.",
     highlights: ["Heritage Pool Villas", "60,000 sq.ft. Clubhouse", "Lake Lagoon & Nakshatra Van", "Vehicle-Free Township"],
     brochure: "/brochures/ayodhya.pdf",
+    mapLink: "https://maps.app.goo.gl/LBWaQ8nKFRvAafpf9",
   },
   {
     slug: "ratnaruchi-vatika",
@@ -123,6 +128,7 @@ export const projects: Project[] = [
       "Premium riverside apartments in Paldi — modern, spacious and exquisite homes a short walk from the Sabarmati Riverfront.",
     highlights: ["Walk to Riverfront", "Earthquake-Resistant", "Designed Main Gate", "Pollution-Free Zone"],
     brochure: "/brochures/ratnaruchi-vatika.pdf",
+    mapLink: "https://maps.app.goo.gl/LBWaQ8nKFRvAafpf9",
   },
   {
     slug: "shefali-2",
@@ -146,6 +152,7 @@ export const projects: Project[] = [
       "A premium residential redevelopment project designed for modern urban living, featuring high-end 3 BHK layouts, mechanical parking, private balconies, and exceptional specifications in the heart of Ahmedabad.",
     highlights: ["Premium 3 BHK Layouts", "Modern Redevelopment", "Mechanical Parking", "Spacious Balconies"],
     brochure: "/SHEFALI 2.0_ELEVATION DEVELOPMENT.pdf",
+    mapLink: "https://maps.app.goo.gl/LBWaQ8nKFRvAafpf9",
   },
   {
     slug: "ratnanjali-elysium",
@@ -168,6 +175,7 @@ export const projects: Project[] = [
       "A premium 100% vegetarian residential community featuring spacious 3 & 4 BHK homes, Vaastu compliant layouts, central garden, gazebo, children's play area, and banquet hall in the rapidly growing hub of Motera, Ahmedabad.",
     highlights: ["Spacious 3 & 4 BHK Homes", "Jain Derasar & Upashray", "100% Vegetarian Community", "Vaastu Compliant Design"],
     brochure: "/Ratnanjali_Elysium.pdf",
+    mapLink: "https://maps.app.goo.gl/LBWaQ8nKFRvAafpf9",
   },
 ];
 

@@ -2,6 +2,7 @@ import { useState, type ReactNode } from "react";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { Preloader } from "@/components/heritage/Preloader";
+import { WhatsAppButton } from "./WhatsAppButton";
 import { useRouterState } from "@tanstack/react-router";
 
 export function PageShell({ children }: { children: ReactNode }) {
@@ -17,6 +18,7 @@ export function PageShell({ children }: { children: ReactNode }) {
         {children}
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }
