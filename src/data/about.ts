@@ -24,13 +24,13 @@ export const aboutData = {
     list: [
       {
         name: "Sanyam Shah",
-        role: "Founder & Co-Founder",
+        role: "Founder & Managing Director",
         bio: "A visionary entrepreneur who laid the foundation of Ratnanjali Group with a steadfast belief in timeless architecture, thoughtful development, and lasting legacies.",
         image: "https://cdn.sanity.io/images/72qij255/production/3db820808cff8c0ee8fafc0da7fb13242d1f15c5-4096x1844.jpg"
       },
       {
         name: "Nirved Balar",
-        role: "Founder & Co-Founder",
+        role: "Director",
         bio: "A dynamic leader shaping the group’s future through innovation, strategic foresight, and a passion for creating landmark developments.",
         image: "https://cdn.sanity.io/images/72qij255/production/586507426cbe90bab79a9ad066ab651131e00da2-1008x1213.jpg"
       }
