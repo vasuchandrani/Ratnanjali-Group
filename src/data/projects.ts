@@ -147,6 +147,28 @@ export const projects: Project[] = [
     highlights: ["Premium 3 BHK Layouts", "Modern Redevelopment", "Mechanical Parking", "Spacious Balconies"],
     brochure: "/SHEFALI 2.0_ELEVATION DEVELOPMENT.pdf",
   },
+  {
+    slug: "ratnanjali-elysium",
+    name: "Ratnanjali Elysium",
+    tagline: "Beyond Living, Into Paradise",
+    category: "residential",
+    categoryLabel: "Residential",
+    status: "ongoing",
+    location: "Motera, Ahmedabad",
+    year: "2026",
+    configuration: "3 & 4 BHK Premium Homes",
+    cover: "https://cdn.sanity.io/images/72qij255/production/bd8c61e4d49482040923ae805c8dda72fa09cbe9-592x414.png",
+    gallery: [
+      "https://cdn.sanity.io/images/72qij255/production/bd8c61e4d49482040923ae805c8dda72fa09cbe9-592x414.png",
+      "https://cdn.sanity.io/images/72qij255/production/6623dbda287f97d16215a2154595d005246d2873-592x417.png",
+      "https://cdn.sanity.io/images/72qij255/production/1d264242a687d4d046d5b29c95a9d8e80176b144-634x428.png",
+      "https://cdn.sanity.io/images/72qij255/production/360f24fca9df7812125ee90aa3b4c4b18f5bd8b6-865x418.png"
+    ],
+    description:
+      "A premium 100% vegetarian residential community featuring spacious 3 & 4 BHK homes, Vaastu compliant layouts, central garden, gazebo, children's play area, and banquet hall in the rapidly growing hub of Motera, Ahmedabad.",
+    highlights: ["Spacious 3 & 4 BHK Homes", "Jain Derasar & Upashray", "100% Vegetarian Community", "Vaastu Compliant Design"],
+    brochure: "/Ratnanjali_Elysium.pdf",
+  },
 ];
 
 export const getProjectsByCategory = (cat?: ProjectCategory) =>

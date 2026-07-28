@@ -65,18 +65,18 @@ export function ProjectsPage() {
                 ? (isEven ? "slide-left" : "slide-right")
                 : "blur";
 
-              return (
+               return (
                 <div 
                   key={project.slug} 
-                  className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center"
+                  className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-stretch"
                 >
                   {/* Image Column */}
-                  <div className={`lg:col-span-7 ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
-                    <Reveal variant={imageVariant}>
+                  <div className={`lg:col-span-7 flex flex-col ${isEven ? 'lg:order-1' : 'lg:order-2'}`}>
+                    <Reveal variant={imageVariant} className="flex-1 flex flex-col">
                       <Link
                         to="/projects/$slug"
                         params={{ slug: project.slug }}
-                        className="group relative block aspect-[16/10] w-full overflow-hidden border border-gold/10 bg-stone shadow-md hover:border-gold/30 transition-all duration-500 carved-frame-hover"
+                        className="group relative block aspect-[16/10] lg:aspect-auto lg:h-full w-full overflow-hidden border border-gold/10 bg-stone shadow-md hover:border-gold/30 transition-all duration-500 carved-frame-hover flex-1"
                       >
                         {/* Carved corner brackets */}
                         <div className="carved-corner carved-corner-tl" />
@@ -87,7 +87,7 @@ export function ProjectsPage() {
                         <img
                           src={project.cover}
                           alt={project.name}
-                          className="img-zoom h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                          className="img-zoom absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
                           loading="lazy"
                         />
                         <div className="absolute inset-0 bg-basalt/10 group-hover:bg-transparent transition-colors duration-500" />
@@ -97,9 +97,9 @@ export function ProjectsPage() {
                   </div>
 
                   {/* Content Column */}
-                  <div className={`lg:col-span-5 ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
-                    <Reveal variant="blur" delay={1}>
-                      <div className="space-y-4 lg:space-y-5">
+                  <div className={`lg:col-span-5 flex flex-col justify-center ${isEven ? 'lg:order-2' : 'lg:order-1'}`}>
+                    <Reveal variant="blur" delay={1} className="h-full flex flex-col justify-center">
+                      <div className="space-y-4 lg:space-y-5 py-4">
                         {/* Title & Tagline Group */}
                         <div className="space-y-1">
                           <h2 className="font-display text-3xl sm:text-4xl lg:text-4xl xl:text-5xl leading-[1.1] text-foreground tracking-wide font-semibold">
@@ -116,15 +116,46 @@ export function ProjectsPage() {
                           </p>
                         </div>
 
-                        {/* Category & Location eyebrow */}
-                        <div className="flex items-center gap-3">
-                          <span className="font-label text-[11px] uppercase tracking-[0.25em] text-gold font-semibold">
-                            {project.categoryLabel}
-                          </span>
-                          <span className="h-px w-8 bg-gold/30" />
-                          <span className="font-label text-[11px] uppercase tracking-[0.25em] text-muted-foreground">
-                            {project.location}
-                          </span>
+                        {/* Category Label */}
+                        <div className="font-label text-[11px] uppercase tracking-[0.25em] text-gold font-semibold">
+                          {project.categoryLabel}
+                        </div>
+
+                        {/* Location & Status Details */}
+                        <div className="grid grid-cols-2 gap-6 py-3 border-y border-gold/10">
+                          <div>
+                            <span className="block font-label text-[9px] uppercase tracking-[0.2em] text-muted-foreground/60 mb-1">
+                              Location
+                            </span>
+                            <span className="font-body text-[11px] font-semibold text-foreground/80 leading-snug block whitespace-pre-line">
+                              {project.location.replace(", ", ",\n")}
+                            </span>
+                          </div>
+                          <div>
+                            <span className="block font-label text-[9px] uppercase tracking-[0.2em] text-muted-foreground/60 mb-1">
+                              Status
+                            </span>
+                            <div className="flex">
+                              {project.status === "completed" && (
+                                <span className="inline-flex items-center gap-1.5 font-display text-[9px] font-bold text-stone-dark/80 bg-stone-soft/20 border border-stone-dark/15 px-2.5 py-0.5 rounded-sm">
+                                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-600" />
+                                  Completed
+                                </span>
+                              )}
+                              {project.status === "ongoing" && (
+                                <span className="inline-flex items-center gap-1.5 font-display text-[9px] font-bold text-gold bg-gold/5 border border-gold/25 px-2.5 py-0.5 rounded-sm">
+                                  <span className="h-1.5 w-1.5 rounded-full bg-gold animate-pulse" />
+                                  Ongoing
+                                </span>
+                              )}
+                              {project.status === "upcoming" && (
+                                <span className="inline-flex items-center gap-1.5 font-display text-[9px] font-bold text-gold-soft/70 bg-gold/5 border border-gold/15 px-2.5 py-0.5 rounded-sm">
+                                  <span className="h-1.5 w-1.5 rounded-full bg-gold-soft/50 animate-pulse" />
+                                  Upcoming
+                                </span>
+                              )}
+                            </div>
+                          </div>
                         </div>
 
                         {/* Description */}
