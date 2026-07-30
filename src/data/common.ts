@@ -1,11 +1,11 @@
 export const commonData = {
-  logo: "https://cdn.sanity.io/images/72qij255/production/f3df5dc047d270fb01688f4c54086940725f8b35-1600x800.png",
+  logo: "/brand/logo.png",
   brandName: "Ratnanjali Group",
-  favicon: "https://cdn.sanity.io/images/72qij255/production/f3df5dc047d270fb01688f4c54086940725f8b35-1600x800.png",
+  favicon: "/brand/logo.png",
   socials: {
     facebook: "#",
     instagram: "#",
     linkedin: "#"
   },
-  whatsapp: "9265102232"
+  whatsapp: "+91 79907 48656"
 };

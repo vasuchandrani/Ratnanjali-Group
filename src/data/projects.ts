@@ -36,18 +36,18 @@ export const projects: Project[] = [
     location: "Prahladnagar, Ahmedabad",
     year: "2024",
     configuration: "3 & 4 BHK · 5 Towers",
-    cover: "https://cdn.sanity.io/images/72qij255/production/68b09cf1d0f3bf398999205a817907072f258909-2377x1351.jpg",
+    cover: "/projects/hastinapur/cover.jpg",
     gallery: [
-      "https://cdn.sanity.io/images/72qij255/production/68b09cf1d0f3bf398999205a817907072f258909-2377x1351.jpg",
-      "https://cdn.sanity.io/images/72qij255/production/041e95c9767290c4d27a23b022c4783a7ca672ac-2377x1351.jpg",
-      "https://cdn.sanity.io/images/72qij255/production/6c48b68cce762d7bb5065d7e14b731a307dae2f0-2377x1351.jpg",
-      "https://cdn.sanity.io/images/72qij255/production/c8faeff845ac36e0d3fb3e746874d9d20bc6fed1-2377x1351.jpg"
+      "/projects/hastinapur/cover.jpg",
+      "/projects/hastinapur/gallery-1.jpg",
+      "/projects/hastinapur/gallery-2.jpg",
+      "/projects/hastinapur/gallery-3.jpg"
     ],
     description:
-      "A maverick residential project featuring five iconic towers, private foyers, and a comprehensive clubhouse — built for the modern royals.",
+      "A maverick residential project built for modern royals, featuring five iconic towers, private foyers, and a comprehensive clubhouse.",
     highlights: ["5 Iconic Towers", "Private Foyer Per Unit", "60+ Amenities", "2 Cars Per Apartment"],
     brochure: "/brochures/hastinapur.pdf",
-    mapLink: "https://maps.app.goo.gl/LBWaQ8nKFRvAafpf9",
+    mapLink: "https://share.google/08uBK62OhfcJWAEHN",
   },
   {
     slug: "ratnanjali-square",
@@ -59,16 +59,16 @@ export const projects: Project[] = [
     location: "Prahladnagar, Ahmedabad",
     year: "2022",
     configuration: "Showrooms · Offices · Garden Suites",
-    cover: "https://cdn.sanity.io/images/72qij255/production/7e4c6d81b064cb56d958e98b0e752771b3cbebf7-2846x2058.jpg",
+    cover: "/projects/ratnanjali-square/cover.jpg",
     gallery: [
-      "https://cdn.sanity.io/images/72qij255/production/7e4c6d81b064cb56d958e98b0e752771b3cbebf7-2846x2058.jpg",
-      "https://cdn.sanity.io/images/72qij255/production/75c9d9c4ebd0d8ac7e3d85b85719da92e417ad82-2846x2058.jpg"
+      "/projects/ratnanjali-square/cover.jpg",
+      "/projects/ratnanjali-square/gallery-1.jpg"
     ],
     description:
-      "A spectacular glass-and-greenery business landmark in Prahladnagar — high-end showrooms, private garden offices, and a grand foyer that exudes prestige.",
+      "A spectacular glass-and-greenery business landmark in Prahladnagar, featuring high-end showrooms, private garden offices, and a grand foyer that exudes prestige.",
     highlights: ["Glass Façade with Sky Gardens", "Private Garden Offices", "High-End Showrooms", "Grand Entrance Foyer"],
     brochure: "/brochures/ratnanjali-square.pdf",
-    mapLink: "https://maps.app.goo.gl/LBWaQ8nKFRvAafpf9",
+    mapLink: "https://share.google/qo9C7Iq6K96n2mMFG",
   },
   {
     slug: "ratnanjali-solitaire",
@@ -80,16 +80,16 @@ export const projects: Project[] = [
     location: "Prernatirth Derasar Road, Ahmedabad",
     year: "2025",
     configuration: "Retail · Workspaces · Hanging Offices",
-    cover: "https://cdn.sanity.io/images/72qij255/production/34c84b125a514a176a5a81b67c65dfa27305354c-1667x1210.jpg",
+    cover: "/projects/ratnanjali-solitaire/cover.jpg",
     gallery: [
-      "https://cdn.sanity.io/images/72qij255/production/34c84b125a514a176a5a81b67c65dfa27305354c-1667x1210.jpg",
-      "https://cdn.sanity.io/images/72qij255/production/04c59c86a8025cfc424cee2579d44411f28c454b-1667x1210.jpg"
+      "/projects/ratnanjali-solitaire/cover.jpg",
+      "/projects/ratnanjali-solitaire/gallery-1.jpg"
     ],
     description:
-      "A swanky new-age business complex at the PDR crossroads — a signature edifice with hanging office spaces, spacious balconies, and green pockets throughout.",
+      "A swanky new-age business complex at the PDR crossroads, highlighting a signature edifice with hanging office spaces, spacious balconies, and green pockets throughout.",
     highlights: ["Hanging Architect Office", "Maximum Visibility", "Strategic PDR Location", "Multi-Format Retail"],
     brochure: "/brochures/ratnanjali-solitaire.pdf",
-    mapLink: "https://maps.app.goo.gl/LBWaQ8nKFRvAafpf9",
+    mapLink: "https://share.google/VQPywd7Sg0he7Xwwr",
   },
   {
     slug: "ayodhya",
@@ -101,16 +101,16 @@ export const projects: Project[] = [
     location: "Thol — Medha, Ahmedabad",
     year: "2025",
     configuration: "Heritage 2 BHK Pool Villas",
-    cover: "https://cdn.sanity.io/images/72qij255/production/3aa8c4287073105800bfaf83324d820fd8a9a7af-1400x904.jpg",
+    cover: "/projects/ayodhya/cover.jpg",
     gallery: [
-      "https://cdn.sanity.io/images/72qij255/production/3aa8c4287073105800bfaf83324d820fd8a9a7af-1400x904.jpg",
-      "https://cdn.sanity.io/images/72qij255/production/156845d757ed90274f8579fad93d5584a06003d9-604x639.jpg"
+      "/projects/ayodhya/cover.jpg",
+      "/projects/ayodhya/gallery-1.jpg"
     ],
     description:
-      "A one-of-a-kind sustainable weekend estate — heritage pool villas, a 60,000 sq.ft. clubhouse, lake lagoon, Nakshatra Van, and an organic, vehicle-free township.",
-    highlights: ["Heritage Pool Villas", "60,000 sq.ft. Clubhouse", "Lake Lagoon & Nakshatra Van", "Vehicle-Free Township"],
+      "A one-of-a-kind sustainable weekend estate featuring heritage pool villas, a 60,000 sq.ft. clubhouse, lake lagoon, Nakshatra Van, and an organic, vehicle free township.",
+    highlights: ["Heritage Pool Villas", "60,000 sq.ft. Clubhouse", "Lake Lagoon & Nakshatra Van", "Vehicle Free Township"],
     brochure: "/brochures/ayodhya.pdf",
-    mapLink: "https://maps.app.goo.gl/LBWaQ8nKFRvAafpf9",
+    mapLink: "https://share.google/KEp86LiBjf61yg93m",
   },
   {
     slug: "ratnaruchi-vatika",
@@ -122,13 +122,13 @@ export const projects: Project[] = [
     location: "Paldi, Ahmedabad",
     year: "2019",
     configuration: "Riverside 1 & 2 BHK",
-    cover: "https://cdn.sanity.io/images/72qij255/production/985e4e9533a44ff92e7ea52091db7274caba847d-843x582.png",
-    gallery: ["https://cdn.sanity.io/images/72qij255/production/985e4e9533a44ff92e7ea52091db7274caba847d-843x582.png"],
+    cover: "/projects/ratnaruchi-vatika/cover.png",
+    gallery: ["/projects/ratnaruchi-vatika/cover.png"],
     description:
-      "Premium riverside apartments in Paldi — modern, spacious and exquisite homes a short walk from the Sabarmati Riverfront.",
+      "Premium riverside apartments in Paldi, offering modern, spacious, and exquisite homes just a short walk from the Sabarmati Riverfront.",
     highlights: ["Walk to Riverfront", "Earthquake-Resistant", "Designed Main Gate", "Pollution-Free Zone"],
     brochure: "/brochures/ratnaruchi-vatika.pdf",
-    mapLink: "https://maps.app.goo.gl/LBWaQ8nKFRvAafpf9",
+    mapLink: "https://share.google/F9LL1wReFHZXll2zt",
   },
   {
     slug: "shefali-2",
@@ -140,19 +140,19 @@ export const projects: Project[] = [
     location: "Ahmedabad",
     year: "2026",
     configuration: "3 BHK Premium Apartments",
-    cover: "https://cdn.sanity.io/images/72qij255/production/d7850374e8734ce7a896cf6d6243cdac37c756c4-1191x796.png",
+    cover: "/projects/shefali-2/cover.png",
     gallery: [
-      "https://cdn.sanity.io/images/72qij255/production/d7850374e8734ce7a896cf6d6243cdac37c756c4-1191x796.png",
-      "https://cdn.sanity.io/images/72qij255/production/cc901a56adf9f659518cd86e7d857607cb644dc7-1189x553.png",
-      "https://cdn.sanity.io/images/72qij255/production/8c08bb7b9879d006068cdf3acc2bbeb8723fd200-1146x771.png",
-      "https://cdn.sanity.io/images/72qij255/production/df97324bf4b7875133996be3fb05ca7411dcffc7-1189x661.png",
-      "https://cdn.sanity.io/images/72qij255/production/15bb8fa6bb5f41bed973b64b9f6c225eb585f6b7-1155x808.png"
+      "/projects/shefali-2/cover.png",
+      "/projects/shefali-2/gallery-1.png",
+      "/projects/shefali-2/gallery-2.png",
+      "/projects/shefali-2/gallery-3.png",
+      "/projects/shefali-2/gallery-4.png"
     ],
     description:
       "A premium residential redevelopment project designed for modern urban living, featuring high-end 3 BHK layouts, mechanical parking, private balconies, and exceptional specifications in the heart of Ahmedabad.",
     highlights: ["Premium 3 BHK Layouts", "Modern Redevelopment", "Mechanical Parking", "Spacious Balconies"],
     brochure: "/SHEFALI 2.0_ELEVATION DEVELOPMENT.pdf",
-    mapLink: "https://maps.app.goo.gl/LBWaQ8nKFRvAafpf9",
+    mapLink: "https://share.google/ESCdNJ5HJuQOrO5P0",
   },
   {
     slug: "ratnanjali-elysium",
@@ -164,18 +164,18 @@ export const projects: Project[] = [
     location: "Motera, Ahmedabad",
     year: "2026",
     configuration: "3 & 4 BHK Premium Homes",
-    cover: "https://cdn.sanity.io/images/72qij255/production/bd8c61e4d49482040923ae805c8dda72fa09cbe9-592x414.png",
+    cover: "/projects/ratnanjali-elysium/cover.png",
     gallery: [
-      "https://cdn.sanity.io/images/72qij255/production/bd8c61e4d49482040923ae805c8dda72fa09cbe9-592x414.png",
-      "https://cdn.sanity.io/images/72qij255/production/6623dbda287f97d16215a2154595d005246d2873-592x417.png",
-      "https://cdn.sanity.io/images/72qij255/production/1d264242a687d4d046d5b29c95a9d8e80176b144-634x428.png",
-      "https://cdn.sanity.io/images/72qij255/production/360f24fca9df7812125ee90aa3b4c4b18f5bd8b6-865x418.png"
+      "/projects/ratnanjali-elysium/cover.png",
+      "/projects/ratnanjali-elysium/gallery-1.png",
+      "/projects/ratnanjali-elysium/gallery-2.png",
+      "/projects/ratnanjali-elysium/gallery-3.png"
     ],
     description:
       "A premium 100% vegetarian residential community featuring spacious 3 & 4 BHK homes, Vaastu compliant layouts, central garden, gazebo, children's play area, and banquet hall in the rapidly growing hub of Motera, Ahmedabad.",
     highlights: ["Spacious 3 & 4 BHK Homes", "Jain Derasar & Upashray", "100% Vegetarian Community", "Vaastu Compliant Design"],
     brochure: "/Ratnanjali_Elysium.pdf",
-    mapLink: "https://maps.app.goo.gl/LBWaQ8nKFRvAafpf9",
+    mapLink: "https://share.google/ESCdNJ5HJuQOrO5P0",
   },
 ];
 

@@ -1,8 +1,9 @@
 import { commonData } from "@/data/common";
 
 export function WhatsAppButton() {
-  const number = commonData.whatsapp;
-  const url = `https://wa.me/91${number}?text=Hello%20Ratnanjali%20Group,%20I%20would%20like%20to%20begin%20a%20conversation.`;
+  const rawNumber = commonData.whatsapp.replace(/\D/g, "");
+  const number = rawNumber.length === 10 ? `91${rawNumber}` : rawNumber;
+  const url = `https://wa.me/${number}?text=Hello%20Ratnanjali%20Group,%20I%20would%20like%20to%20begin%20a%20conversation.`;
 
   return (
     <a

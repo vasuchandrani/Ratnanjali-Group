@@ -106,23 +106,23 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         {
           property: "og:image",
           content:
-            "https://cdn.sanity.io/images/72qij255/production/f2026833e1c3cc1bbec89d195d7cfa4267b47a05-622x350.jpg",
+            "/common/page-hero-bg.jpg",
         },
         {
           name: "twitter:image",
           content:
-            "https://cdn.sanity.io/images/72qij255/production/f2026833e1c3cc1bbec89d195d7cfa4267b47a05-622x350.jpg",
+            "/common/page-hero-bg.jpg",
         },
       ],
       links: [
         {
           rel: "icon",
           type: "image/png",
-          href: "https://cdn.sanity.io/images/72qij255/production/f3df5dc047d270fb01688f4c54086940725f8b35-1600x800.png",
+          href: "/brand/logo.png",
         },
         {
           rel: "apple-touch-icon",
-          href: "https://cdn.sanity.io/images/72qij255/production/f3df5dc047d270fb01688f4c54086940725f8b35-1600x800.png",
+          href: "/brand/logo.png",
         },
 
         { rel: "preconnect", href: "https://fonts.googleapis.com" },

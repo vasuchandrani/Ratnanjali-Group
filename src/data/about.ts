@@ -7,7 +7,7 @@ export const aboutData = {
   ourStory: {
     title: "Our Story",
     description: "Ratnanjali Group began with a simple conviction: that a building must outlive trends. Over two decades, that conviction has shaped a portfolio of residences, commercial avenues and weekend estates across Ahmedabad — quietly establishing a reputation for considered architecture, honest construction and timely delivery.",
-    coverImage: "https://cdn.sanity.io/images/72qij255/production/8efa5008970dc6ad3000efa8be89c14c5728c9bc-785x1024.jpg"
+    coverImage: "/about/our-story.jpg"
   },
   missionVision: {
     mission: {
@@ -26,13 +26,13 @@ export const aboutData = {
         name: "Sanyam Shah",
         role: "Founder & Managing Director",
         bio: "A visionary entrepreneur who laid the foundation of Ratnanjali Group with a steadfast belief in timeless architecture, thoughtful development, and lasting legacies.",
-        image: "https://cdn.sanity.io/images/72qij255/production/3db820808cff8c0ee8fafc0da7fb13242d1f15c5-4096x1844.jpg"
+        image: "/about/founder-sanyam-shah.jpg"
       },
       {
         name: "Nirved Balar",
         role: "Director",
         bio: "A dynamic leader shaping the group’s future through innovation, strategic foresight, and a passion for creating landmark developments.",
-        image: "https://cdn.sanity.io/images/72qij255/production/586507426cbe90bab79a9ad066ab651131e00da2-1008x1213.jpg"
+        image: "/about/director-nirved-balar.jpg"
       }
     ]
   },
