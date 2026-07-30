@@ -22,7 +22,7 @@ export function Footer() {
           <div className="md:col-span-5">
             <Logo className="h-16 w-auto" variant="dark" />
             <p className="mt-6 max-w-md font-body text-sm leading-relaxed text-stone-dark/70">
-              Crafting magnificent structures that exude class and luxury across Ahmedabad — residences, commercial landmarks, weekend estates and mixed-use developments.
+              Crafting magnificent structures that exude class and luxury across Ahmedabad, featuring premium residences, commercial landmarks, and weekend estates.
             </p>
             {/* Abstract heritage mark — lotus/khanda-derived geometric element */}
             <div className="mt-8 flex items-center gap-3 text-gold/60">
@@ -55,7 +55,6 @@ export function Footer() {
               <li className="font-body text-stone-dark/80">Residential</li>
               <li className="font-body text-stone-dark/80">Commercial</li>
               <li className="font-body text-stone-dark/80">Hospitality</li>
-              <li className="font-body text-stone-dark/80">Mixed Use</li>
             </ul>
           </div>
 
