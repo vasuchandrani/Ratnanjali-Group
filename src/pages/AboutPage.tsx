@@ -12,9 +12,9 @@ const timeline = [
   { year: "2007", event: "Ratnanjali Group founded in Ahmedabad" },
   { year: "2012", event: "First landmark residential project delivered" },
   { year: "2016", event: "Expansion into commercial development" },
-  { year: "2019", event: "Ratnaruchi Vatika — riverside living at Paldi" },
-  { year: "2022", event: "Ratnanjali Square completed — new address of success" },
-  { year: "2024", event: "Hastinapur The Royal Legacy announced — five iconic towers" },
+  { year: "2019", event: "Ratnaruchi Vatika: riverside living at Paldi" },
+  { year: "2022", event: "Ratnanjali Square completed, the new address of success" },
+  { year: "2024", event: "Hastinapur The Royal Legacy announced, featuring five iconic towers" },
   { year: "2025", event: "Ratnanjali Solitaire & Ayodhya underway" },
 ];
 
@@ -76,20 +76,20 @@ export function AboutPage() {
         </div>
 
         <div className="container-x relative z-10 mx-auto max-w-[1400px] flex flex-col items-center justify-center text-center">
-          <Reveal>
-            <div className="flex items-center justify-center gap-5 mb-4">
-              <span className="h-px w-10 bg-gold/40" />
-              <span className="eyebrow eyebrow-gold">{hero.eyebrow}</span>
-              <span className="h-px w-10 bg-gold/40" />
+          <div className="flex flex-col items-center justify-center">
+            <div className="opacity-0 animate-[fade-up_0.8s_ease-out_.5s_forwards] w-full flex justify-center">
+              <ShlokaKicker light className="mb-6">
+                A legacy carved in stone, measured in trust
+              </ShlokaKicker>
             </div>
-            <ShlokaKicker light className="mb-6">
-              A legacy carved in stone, measured in trust
-            </ShlokaKicker>
-            <h1 className="max-w-4xl font-display text-5xl leading-[1.02] sm:text-6xl lg:text-7xl tracking-wide text-gold-soft font-semibold">
+            <h1 className="max-w-4xl font-display text-5xl leading-[1.02] sm:text-6xl lg:text-7xl tracking-wide text-gold-soft font-semibold opacity-0 animate-[fade-up_1s_ease-out_.6s_forwards]">
               Our Legacy
             </h1>
-          </Reveal>
-          <div className="mt-12 w-full max-w-md mx-auto">
+            <p className="mt-6 max-w-xl mx-auto font-body text-base leading-[1.7] text-gold-soft/60 sm:text-lg opacity-0 animate-[fade-up_0.8s_ease-out_.9s_forwards]">
+              Nearly two decades of thoughtful creation and architectural excellence across Ahmedabad.
+            </p>
+          </div>
+          <div className="mt-12 w-full max-w-md mx-auto opacity-0 animate-[fade-in_1.2s_ease-out_1.2s_forwards]">
             <HeritageDivider variant="chakra" />
           </div>
         </div>
@@ -100,10 +100,10 @@ export function AboutPage() {
       <section className="relative py-20 bg-background overflow-hidden">
         <div className="absolute inset-0 bg-jali pointer-events-none opacity-40" />
 
-        <div className="container-x relative mx-auto grid max-w-[1400px] gap-16 lg:grid-cols-12">
-          {/* Story image with carved frame */}
-          <Reveal className="lg:col-span-5">
-            <div className="group relative carved-frame-hover">
+        <div className="container-x relative mx-auto grid max-w-[1400px] gap-16 lg:grid-cols-12 items-stretch">
+          {/* Story image with carved frame stretched */}
+          <Reveal className="lg:col-span-5 relative flex flex-col h-full">
+            <div className="group relative carved-frame-hover h-full min-h-[450px]">
               <div className="carved-corner carved-corner-tl" />
               <div className="carved-corner carved-corner-tr" />
               <div className="carved-corner carved-corner-bl" />
@@ -111,7 +111,7 @@ export function AboutPage() {
               <img
                 src={ourStory.coverImage}
                 alt="Our Story Cover"
-                className="aspect-[4/5] w-full object-cover border border-gold/10 transition-transform duration-1000 group-hover:scale-[1.02]"
+                className="absolute inset-0 h-full w-full object-cover border border-gold/10 transition-transform duration-1000 group-hover:scale-[1.02]"
                 loading="lazy"
               />
             </div>
@@ -141,10 +141,6 @@ export function AboutPage() {
               </div>
             </Reveal>
 
-            <Reveal delay={1} className="mt-12">
-              <HeritageDivider variant="jali" />
-            </Reveal>
-
             {/* Partners */}
             <Reveal delay={2} className="mt-12 border-t border-border/50 pt-10">
               <div className="eyebrow eyebrow-gold mb-6">{partners.eyebrow}</div>
@@ -170,7 +166,6 @@ export function AboutPage() {
           <Reveal>
             <div className="text-center mb-16 lg:mb-24">
               <div className="eyebrow eyebrow-gold mb-4">{founders.eyebrow}</div>
-              <ShlokaKicker>Leadership forged in vision and integrity</ShlokaKicker>
               <h2 className="mt-5 font-display text-4xl leading-tight sm:text-5xl tracking-wide text-foreground font-semibold">
                 The minds behind the landmarks.
               </h2>
@@ -229,8 +224,8 @@ export function AboutPage() {
         <div className="container-x relative mx-auto max-w-[850px]">
           <Reveal>
             <div className="text-center mb-20">
-              <div className="eyebrow text-gold/50 mb-4">Our Journey</div>
-              <ShlokaKicker light>Each year, a spoke added to the wheel</ShlokaKicker>
+              <div className="eyebrow text-gold-bright font-bold text-sm sm:text-base tracking-[0.35em] mb-4">Our Journey</div>
+              <ShlokaKicker light className="text-lg sm:text-2xl font-bold text-gold-soft">Each year, a spoke added to the wheel</ShlokaKicker>
             </div>
           </Reveal>
 
@@ -257,8 +252,8 @@ export function AboutPage() {
                       {i % 2 === 0 ? (
                         <div
                           className={`p-6 rounded-lg border bg-stone-light/40 backdrop-blur-sm transition-all duration-700 ${isActive
-                              ? 'border-gold/30 shadow-[0_4px_20px_rgba(196,164,105,0.15)] translate-y-0 opacity-100'
-                              : 'border-transparent opacity-30 translate-y-4'
+                            ? 'border-gold/30 shadow-[0_4px_20px_rgba(196,164,105,0.15)] translate-y-0 opacity-100'
+                            : 'border-transparent opacity-30 translate-y-4'
                             } hover:border-gold/60 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(196,164,105,0.25)]`}
                         >
                           <div className={`font-display text-3xl font-bold tracking-wide transition-colors duration-500 ${isActive ? 'gold-gradient-text' : 'text-stone-dark/40'}`}>
@@ -276,8 +271,8 @@ export function AboutPage() {
                     {/* Dharma-chakra node */}
                     <div
                       className={`absolute left-8 -translate-x-1/2 top-6 md:relative md:left-auto md:translate-x-0 md:top-auto z-10 flex-shrink-0 flex items-center justify-center w-16 h-16 transition-all duration-700 ${isActive
-                          ? 'scale-125 rotate-[180deg] filter drop-shadow-[0_0_8px_rgba(196,164,105,0.5)]'
-                          : 'scale-100 opacity-30'
+                        ? 'scale-125 rotate-[180deg] filter drop-shadow-[0_0_8px_rgba(196,164,105,0.5)]'
+                        : 'scale-100 opacity-30'
                         }`}
                     >
                       <div className={`absolute inset-0 rounded-full border transition-all duration-700 ${isActive ? 'border-gold/40 bg-gold/5 scale-110' : 'border-transparent'}`} />
@@ -291,8 +286,8 @@ export function AboutPage() {
                         {i % 2 !== 0 ? (
                           <div
                             className={`p-6 rounded-lg border bg-stone-light/40 backdrop-blur-sm transition-all duration-700 ${isActive
-                                ? 'border-gold/30 shadow-[0_4px_20px_rgba(196,164,105,0.15)] translate-y-0 opacity-100'
-                                : 'border-transparent opacity-30 translate-y-4'
+                              ? 'border-gold/30 shadow-[0_4px_20px_rgba(196,164,105,0.15)] translate-y-0 opacity-100'
+                              : 'border-transparent opacity-30 translate-y-4'
                               } hover:border-gold/60 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(196,164,105,0.25)]`}
                           >
                             <div className={`font-display text-3xl font-bold tracking-wide transition-colors duration-500 ${isActive ? 'gold-gradient-text' : 'text-stone-dark/40'}`}>
@@ -311,8 +306,8 @@ export function AboutPage() {
                       <div className="md:hidden">
                         <div
                           className={`p-6 rounded-lg border bg-stone-light/40 backdrop-blur-sm transition-all duration-700 ${isActive
-                              ? 'border-gold/30 shadow-[0_4px_20px_rgba(196,164,105,0.15)] translate-y-0 opacity-100'
-                              : 'border-transparent opacity-30 translate-y-4'
+                            ? 'border-gold/30 shadow-[0_4px_20px_rgba(196,164,105,0.15)] translate-y-0 opacity-100'
+                            : 'border-transparent opacity-30 translate-y-4'
                             } hover:border-gold/60 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(196,164,105,0.25)]`}
                         >
                           <div className={`font-display text-2xl font-bold tracking-wide transition-colors duration-500 ${isActive ? 'gold-gradient-text' : 'text-stone-dark/40'}`}>

@@ -46,7 +46,7 @@ export function Hero() {
         <div className="absolute left-6 top-1/2 hidden -translate-y-1/2 lg:block z-20">
           <div className="flex flex-col items-center gap-6">
             <div className="h-20 w-px bg-gold/30" />
-            <span className="rotate-180 font-label text-[9px] uppercase tracking-[0.4em] text-gold-soft/50 [writing-mode:vertical-rl]">
+            <span className="rotate-180 font-label text-[9px] font-bold uppercase tracking-[0.4em] text-gold-soft [writing-mode:vertical-rl]">
               Est · MMX · Ahmedabad
             </span>
             <div className="h-20 w-px bg-gold/30" />
@@ -68,17 +68,17 @@ export function Hero() {
 
               {/* Shloka kicker */}
               <p className="shloka-kicker mb-4 text-gold-soft/40 opacity-0 animate-[fade-up_0.8s_ease-out_.5s_forwards]">
-                — Where vision is forged in stone, legacy rises —
+                Where vision is forged in stone, legacy rises
               </p>
 
               {/* Main headline — Cinzel with gold gradient — BOLD & CRISP & RESIZED FOR SHORTER VIEWPORTS */}
-              <h1 className="font-display text-[clamp(2.25rem,4.5vw,4.5rem)] font-semibold leading-[0.95] tracking-[0.02em] opacity-0 animate-[fade-up_1s_ease-out_.6s_forwards]">
-                <span className="text-white">{hero.mainTitle.lightText}</span>{" "}
-                <em className="not-italic font-heading italic font-semibold gold-gradient-text">
+              <h1 className="font-display text-[clamp(2.25rem,4.5vw,4.5rem)] font-extrabold leading-[0.95] tracking-[0.02em] opacity-0 animate-[fade-up_1s_ease-out_.6s_forwards]">
+                <span className="text-white font-extrabold">{hero.mainTitle.lightText}</span>{" "}
+                <em className="not-italic font-heading italic font-extrabold gold-gradient-text">
                   {hero.mainTitle.italicText}
                 </em>
                 <br />
-                <span className="text-white font-bold">{hero.mainTitle.boldText}</span>
+                <span className="text-white font-extrabold">{hero.mainTitle.boldText}</span>
               </h1>
 
               {/* Description */}

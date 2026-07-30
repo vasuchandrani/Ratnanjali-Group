@@ -27,20 +27,20 @@ export function ContactPage() {
         </div>
 
         <div className="container-x relative z-10 mx-auto max-w-[1400px] flex flex-col items-center justify-center text-center">
-          <Reveal>
-            <div className="flex items-center justify-center gap-5 mb-4">
-              <span className="h-px w-10 bg-gold/40" />
-              <span className="eyebrow eyebrow-gold">{hero.eyebrow}</span>
-              <span className="h-px w-10 bg-gold/40" />
+          <div className="flex flex-col items-center justify-center">
+            <div className="opacity-0 animate-[fade-up_0.8s_ease-out_.5s_forwards] w-full flex justify-center">
+              <ShlokaKicker light className="mb-6">
+                Open to every visitor, every question, every dream
+              </ShlokaKicker>
             </div>
-            <ShlokaKicker light className="mb-6">
-              Open to every visitor, every question, every dream
-            </ShlokaKicker>
-            <h1 className="max-w-4xl font-display text-5xl leading-[1.02] sm:text-6xl lg:text-7xl tracking-wide text-gold-soft font-semibold">
+            <h1 className="max-w-4xl font-display text-5xl leading-[1.02] sm:text-6xl lg:text-7xl tracking-wide text-gold-soft font-semibold opacity-0 animate-[fade-up_1s_ease-out_.6s_forwards]">
               Connect With Us
             </h1>
-          </Reveal>
-          <div className="mt-12 w-full max-w-md mx-auto">
+            <p className="mt-6 max-w-xl mx-auto font-body text-base leading-[1.7] text-gold-soft/60 sm:text-lg opacity-0 animate-[fade-up_0.8s_ease-out_.9s_forwards]">
+              Begin a conversation with our relationship managers or visit our head office in Ahmedabad.
+            </p>
+          </div>
+          <div className="mt-12 w-full max-w-md mx-auto opacity-0 animate-[fade-in_1.2s_ease-out_1.2s_forwards]">
             <HeritageDivider variant="chakra" />
           </div>
         </div>

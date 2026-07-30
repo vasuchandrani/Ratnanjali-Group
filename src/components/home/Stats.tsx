@@ -72,7 +72,7 @@ export function Stats() {
           <div className="flex flex-col items-start gap-6 md:flex-row md:items-end md:justify-between">
             <div>
               <div className="eyebrow text-gold/50 mb-4"><span className="rule" />Impact in Numbers</div>
-              <ShlokaKicker>Steady as the wheel, measured in trust</ShlokaKicker>
+              {/* <ShlokaKicker>Steady as the wheel, measured in trust</ShlokaKicker> */}
               <h2 className="mt-4 font-display text-3xl leading-[1.05] tracking-wide sm:text-4xl lg:text-[2.5rem] text-foreground font-semibold">
                 Two decades.{" "}
                 <em className="not-italic font-heading italic text-muted-foreground">Measured in trust.</em>

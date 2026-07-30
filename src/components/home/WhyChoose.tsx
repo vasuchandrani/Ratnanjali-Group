@@ -46,9 +46,9 @@ export function WhyChoose() {
       <div className="container-x relative mx-auto max-w-[1400px]">
         <Reveal className="max-w-3xl">
           <div className="eyebrow mb-4 text-gold/50"><span className="rule" />Why Ratnanjali</div>
-          <ShlokaKicker className="mb-6">
+          {/* <ShlokaKicker className="mb-6">
             Where duty meets design, and integrity builds cities
-          </ShlokaKicker>
+          </ShlokaKicker> */}
           <h2 className="font-display text-4xl leading-[1.05] sm:text-5xl lg:text-6xl tracking-wide">
             The discipline behind{" "}
             <em className="not-italic font-heading italic gold-gradient-text">every Ratnanjali address.</em>

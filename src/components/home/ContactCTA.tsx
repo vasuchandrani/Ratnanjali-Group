@@ -34,11 +34,8 @@ export function ContactCTA() {
       <div className="container-x relative mx-auto max-w-[1400px]">
         <div className="grid items-end gap-16 lg:grid-cols-12">
           <Reveal className="lg:col-span-8">
-            <div className="eyebrow mb-4 text-gold/50"><span className="rule" />Begin a Conversation</div>
-            <p className="shloka-kicker mb-6 text-gold-soft/40">
-              — Open to every visitor, every question, every dream —
-            </p>
-            <h2 className="font-display text-5xl leading-[0.95] sm:text-6xl lg:text-[6.5rem] tracking-wide">
+            <div className="eyebrow mb-4 text-gold-bright"><span className="rule" />Begin a Conversation</div>
+            <h2 className="font-display text-[2.5rem] sm:text-[3.25rem] lg:text-[5.8rem] leading-[0.95] tracking-wide">
               <span className="text-white">Let's build</span>
               <br />
               <em className="not-italic font-heading italic gold-gradient-text">

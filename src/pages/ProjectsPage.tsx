@@ -30,11 +30,6 @@ export function ProjectsPage() {
 
         <div className="container-x relative z-10 mx-auto max-w-[1400px] flex flex-col items-center justify-center text-center">
           <div className="flex flex-col items-center justify-center">
-            <div className="flex items-center justify-center gap-5 mb-4 opacity-0 animate-[fade-up_0.8s_ease-out_.3s_forwards]">
-              <span className="h-px w-10 bg-gold/40" />
-              <span className="eyebrow eyebrow-gold">Portfolio</span>
-              <span className="h-px w-10 bg-gold/40" />
-            </div>
             <div className="opacity-0 animate-[fade-up_0.8s_ease-out_.5s_forwards] w-full flex justify-center">
               <ShlokaKicker light className="mb-6">
                 A chronicle of landmarks, inscribed in the city's memory
@@ -65,9 +60,9 @@ export function ProjectsPage() {
                 ? (isEven ? "slide-left" : "slide-right")
                 : "blur";
 
-               return (
-                <div 
-                  key={project.slug} 
+              return (
+                <div
+                  key={project.slug}
                   className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-stretch"
                 >
                   {/* Image Column */}
@@ -103,7 +98,7 @@ export function ProjectsPage() {
                         {/* Title & Tagline Group */}
                         <div className="space-y-1">
                           <h2 className="font-display text-3xl sm:text-4xl lg:text-4xl xl:text-5xl leading-[1.1] text-foreground tracking-wide font-semibold">
-                            <Link 
+                            <Link
                               to="/projects/$slug"
                               params={{ slug: project.slug }}
                               className="hover:text-gold transition-colors duration-300"

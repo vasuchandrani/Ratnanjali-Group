@@ -81,10 +81,10 @@ export function Header() {
         {/* Enquire CTA */}
         <Link
           to="/contact"
-          className={`hidden items-center gap-2 border px-6 py-2.5 font-display font-bold text-[12px] uppercase tracking-[0.24em] transition-all duration-300 lg:inline-flex ${
+          className={`hidden items-center gap-2 border-2 px-6 py-2.5 font-display font-extrabold text-[12px] uppercase tracking-[0.24em] transition-all duration-300 lg:inline-flex ${
             scrolled
-              ? "border-stone-dark/30 text-stone-dark hover:border-stone-dark/60 hover:bg-stone-dark/5"
-              : "border-gold/30 text-gold-soft gold-shimmer hover:border-gold/60 hover:bg-gold/5"
+              ? "border-stone-dark text-stone-dark hover:bg-stone-dark/10"
+              : "border-gold text-gold-bright gold-shimmer hover:bg-gold/10 hover:border-gold-bright"
           }`}
         >
           Enquire
@@ -134,10 +134,10 @@ export function Header() {
           ))}
           <Link
             to="/contact"
-            className={`mt-3 inline-flex items-center justify-center border px-5 py-3 font-display font-bold text-[11px] uppercase tracking-[0.24em] transition-all ${
+            className={`mt-3 inline-flex items-center justify-center border-2 px-5 py-3 font-display font-extrabold text-[11px] uppercase tracking-[0.24em] transition-all ${
               scrolled
-                ? "border-stone-dark/30 text-stone-dark hover:bg-stone-dark/5"
-                : "border-gold/30 text-gold-soft hover:bg-gold/10"
+                ? "border-stone-dark text-stone-dark hover:bg-stone-dark/10"
+                : "border-gold text-gold-soft hover:bg-gold/15"
             }`}
           >
             Enquire

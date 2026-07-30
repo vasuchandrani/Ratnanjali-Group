@@ -23,9 +23,6 @@ export function Expertise() {
               Our Philosophy
               <span className="rule ml-3" />
             </div>
-            <ShlokaKicker className="mb-6 justify-center flex">
-              Where philosophy meets form, legacy is born
-            </ShlokaKicker>
             <h2 className="font-display text-4xl leading-[1.1] sm:text-5xl lg:text-6xl tracking-wide text-foreground font-semibold">
               Four Principles.
               <br />
@@ -45,18 +42,16 @@ export function Expertise() {
                 key={s.title}
                 onMouseEnter={() => setActiveIdx(idx)}
                 onFocus={() => setActiveIdx(idx)}
-                className={`relative font-display text-xl sm:text-2xl lg:text-2xl xl:text-3xl whitespace-nowrap tracking-wide transition-all duration-500 cursor-pointer ${
-                  activeIdx === idx 
-                    ? "gold-gradient-text font-semibold scale-105" 
+                className={`relative font-display text-xl sm:text-2xl lg:text-2xl xl:text-3xl whitespace-nowrap tracking-wide transition-all duration-500 cursor-pointer ${activeIdx === idx
+                    ? "gold-gradient-text font-semibold scale-105"
                     : "text-foreground/45 hover:text-foreground/80"
-                }`}
+                  }`}
               >
                 {s.title}
                 {/* Underline indicator */}
-                <span 
-                  className={`absolute -bottom-[9px] left-0 h-[2px] bg-gradient-to-r from-gold to-gold-soft transition-all duration-500 ${
-                    activeIdx === idx ? "w-full" : "w-0"
-                  }`}
+                <span
+                  className={`absolute -bottom-[9px] left-0 h-[2px] bg-gradient-to-r from-gold to-gold-soft transition-all duration-500 ${activeIdx === idx ? "w-full" : "w-0"
+                    }`}
                 />
               </button>
             ))}
@@ -75,11 +70,10 @@ export function Expertise() {
             {expertise.sectors.map((s, idx) => (
               <div
                 key={s.title}
-                className={`absolute inset-0 transition-all duration-700 ease-in-out ${
-                  activeIdx === idx 
-                    ? "opacity-100 scale-100 blur-0 z-10" 
+                className={`absolute inset-0 transition-all duration-700 ease-in-out ${activeIdx === idx
+                    ? "opacity-100 scale-100 blur-0 z-10"
                     : "opacity-0 scale-105 blur-[4px] z-0 pointer-events-none"
-                }`}
+                  }`}
               >
                 <img
                   src={s.img}
@@ -89,7 +83,7 @@ export function Expertise() {
                 />
                 {/* Overlay Vignette */}
                 <div className="absolute inset-0 bg-gradient-to-t from-basalt/95 via-basalt/40 to-transparent" />
-                
+
                 {/* Content Container */}
                 <div className="absolute inset-0 flex flex-col justify-end p-6 sm:p-10 md:p-12 text-white z-20">
                   <div className="max-w-2xl">
@@ -106,9 +100,9 @@ export function Expertise() {
                     <p className="mt-3 max-w-xl font-body text-sm leading-relaxed text-white/80">
                       {s.desc}
                     </p>
-                    
+
                     {/* Link button to projects page */}
-                    <Link 
+                    <Link
                       to={s.to}
                       className="mt-6 inline-flex items-center gap-3 border border-white/40 hover:border-gold hover:bg-gold/15 px-6 py-3 font-label text-[10px] uppercase tracking-[0.25em] text-white transition-all duration-300"
                     >

@@ -57,9 +57,6 @@ export function ProudProjects() {
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <Reveal>
             <div className="eyebrow eyebrow-gold mb-4"><span className="rule" />Our Proud Projects</div>
-            <ShlokaKicker className="mb-6">
-              Each landmark, a verse in the city's living poem
-            </ShlokaKicker>
             <h2 className="font-display text-4xl leading-[1.05] sm:text-5xl lg:text-6xl kerning-tight">
               A portfolio of{" "}
               <em className="not-italic font-heading italic text-foreground/60">considered</em>{" "}
@@ -144,18 +141,16 @@ export function ProudProjects() {
               <button
                 aria-label="Previous project"
                 onClick={goPrev}
-                className={`absolute left-5 top-1/2 z-40 flex h-14 w-14 -translate-y-1/2 items-center justify-center border border-gold/30 bg-basalt/40 text-gold-soft backdrop-blur-md transition-all duration-500 hover:bg-gold/10 hover:border-gold/60 ${
-                  hover ? "translate-x-0 opacity-100" : "-translate-x-2 opacity-0"
-                }`}
+                className={`absolute left-5 top-1/2 z-40 flex h-14 w-14 -translate-y-1/2 items-center justify-center border border-gold/30 bg-basalt/40 text-gold-soft backdrop-blur-md transition-all duration-500 hover:bg-gold/10 hover:border-gold/60 ${hover ? "translate-x-0 opacity-100" : "-translate-x-2 opacity-0"
+                  }`}
               >
                 <ArrowLeft size={18} strokeWidth={1.5} />
               </button>
               <button
                 aria-label="Next project"
                 onClick={goNext}
-                className={`absolute right-5 top-1/2 z-40 flex h-14 w-14 -translate-y-1/2 items-center justify-center border border-gold/30 bg-basalt/40 text-gold-soft backdrop-blur-md transition-all duration-500 hover:bg-gold/10 hover:border-gold/60 ${
-                  hover ? "translate-x-0 opacity-100" : "translate-x-2 opacity-0"
-                }`}
+                className={`absolute right-5 top-1/2 z-40 flex h-14 w-14 -translate-y-1/2 items-center justify-center border border-gold/30 bg-basalt/40 text-gold-soft backdrop-blur-md transition-all duration-500 hover:bg-gold/10 hover:border-gold/60 ${hover ? "translate-x-0 opacity-100" : "translate-x-2 opacity-0"
+                  }`}
               >
                 <ArrowRight size={18} strokeWidth={1.5} />
               </button>
@@ -169,11 +164,10 @@ export function ProudProjects() {
                     key={p.slug}
                     onClick={() => setIdx(i)}
                     aria-label={`Go to ${p.name}`}
-                    className={`transition-all duration-500 rounded-full ${
-                      i === activeDot
+                    className={`transition-all duration-500 rounded-full ${i === activeDot
                         ? "w-3 h-3 bg-gold shadow-[0_0_8px_rgba(196,164,105,0.3)]"
                         : "w-2 h-2 bg-gold/25 hover:bg-gold/50"
-                    }`}
+                      }`}
                   />
                 ))}
               </div>

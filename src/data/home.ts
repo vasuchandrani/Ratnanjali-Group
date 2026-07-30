@@ -6,7 +6,7 @@ export const homeData = {
       italicText: "Landmarks.",
       boldText: "Creating Value."
     },
-    description: "For nearly two decades, Ratnanjali Group has been shaping the skyline of Ahmedabad — crafting residences, commercial avenues, and weekend estates that stand as testimonies to vision, craft and trust.",
+    description: "For nearly two decades, Ratnanjali Group has been shaping the skyline of Ahmedabad, crafting residences, commercial avenues, and weekend estates that stand as testimonies to vision, craft and trust.",
     bgImage: "https://cdn.sanity.io/images/e4hmmdtc/production/85fc088c278ecb72bf80491efbd36e956889fd9f-1024x362.png",
     founders: {
       eyebrow: "Founding Leadership",

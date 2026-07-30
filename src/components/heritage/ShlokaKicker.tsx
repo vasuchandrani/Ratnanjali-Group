@@ -18,7 +18,7 @@ export function ShlokaKicker({ children, className = "", light = false }: Shloka
       className={`shloka-kicker ${light ? "text-gold-soft/70" : ""} ${className}`}
       aria-hidden="true"
     >
-      — {children} —
+      {children}
     </p>
   );
 }
