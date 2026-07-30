@@ -36,12 +36,12 @@ export const projects: Project[] = [
     location: "Prahladnagar, Ahmedabad",
     year: "2024",
     configuration: "3 & 4 BHK · 5 Towers",
-    cover: "/projects/hastinapur/cover.jpg",
+    cover: "https://cdn.sanity.io/images/e4hmmdtc/production/da5746e1623abb61138c09d06c283752a5ef1cb3-2377x1351.jpg",
     gallery: [
-      "/projects/hastinapur/cover.jpg",
-      "/projects/hastinapur/gallery-1.jpg",
-      "/projects/hastinapur/gallery-2.jpg",
-      "/projects/hastinapur/gallery-3.jpg"
+      "https://cdn.sanity.io/images/e4hmmdtc/production/da5746e1623abb61138c09d06c283752a5ef1cb3-2377x1351.jpg",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/0e57799a4108ad3cf6d760a03856e25e1ec8065d-2377x1351.jpg",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/20f7fb89900219a48a24177ea9be0a72a6a244a6-2377x1351.jpg",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/908d5aa4a7318e94fd4bad4baacc45b4260b9c30-2377x1351.jpg"
     ],
     description:
       "A maverick residential project built for modern royals, featuring five iconic towers, private foyers, and a comprehensive clubhouse.",
@@ -59,10 +59,10 @@ export const projects: Project[] = [
     location: "Prahladnagar, Ahmedabad",
     year: "2022",
     configuration: "Showrooms · Offices · Garden Suites",
-    cover: "/projects/ratnanjali-square/cover.jpg",
+    cover: "https://cdn.sanity.io/images/e4hmmdtc/production/7e4c6d81b064cb56d958e98b0e752771b3cbebf7-2846x2058.jpg",
     gallery: [
-      "/projects/ratnanjali-square/cover.jpg",
-      "/projects/ratnanjali-square/gallery-1.jpg"
+      "https://cdn.sanity.io/images/e4hmmdtc/production/7e4c6d81b064cb56d958e98b0e752771b3cbebf7-2846x2058.jpg",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/75c9d9c4ebd0d8ac7e3d85b85719da92e417ad82-2846x2058.jpg"
     ],
     description:
       "A spectacular glass-and-greenery business landmark in Prahladnagar, featuring high-end showrooms, private garden offices, and a grand foyer that exudes prestige.",
@@ -80,10 +80,10 @@ export const projects: Project[] = [
     location: "Prernatirth Derasar Road, Ahmedabad",
     year: "2025",
     configuration: "Retail · Workspaces · Hanging Offices",
-    cover: "/projects/ratnanjali-solitaire/cover.jpg",
+    cover: "https://cdn.sanity.io/images/e4hmmdtc/production/8fe4db1325bff5bbb86e09427deb89ee32fbd419-1667x1210.jpg",
     gallery: [
-      "/projects/ratnanjali-solitaire/cover.jpg",
-      "/projects/ratnanjali-solitaire/gallery-1.jpg"
+      "https://cdn.sanity.io/images/e4hmmdtc/production/8fe4db1325bff5bbb86e09427deb89ee32fbd419-1667x1210.jpg",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/622ca6b4fc27ae75f74afd5b0a7fdd682b5ae762-1667x1210.jpg"
     ],
     description:
       "A swanky new-age business complex at the PDR crossroads, highlighting a signature edifice with hanging office spaces, spacious balconies, and green pockets throughout.",
@@ -101,10 +101,10 @@ export const projects: Project[] = [
     location: "Thol — Medha, Ahmedabad",
     year: "2025",
     configuration: "Heritage 2 BHK Pool Villas",
-    cover: "/projects/ayodhya/cover.jpg",
+    cover: "https://cdn.sanity.io/images/e4hmmdtc/production/3aa8c4287073105800bfaf83324d820fd8a9a7af-1400x904.jpg",
     gallery: [
-      "/projects/ayodhya/cover.jpg",
-      "/projects/ayodhya/gallery-1.jpg"
+      "https://cdn.sanity.io/images/e4hmmdtc/production/3aa8c4287073105800bfaf83324d820fd8a9a7af-1400x904.jpg",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/156845d757ed90274f8579fad93d5584a06003d9-604x639.jpg"
     ],
     description:
       "A one-of-a-kind sustainable weekend estate featuring heritage pool villas, a 60,000 sq.ft. clubhouse, lake lagoon, Nakshatra Van, and an organic, vehicle free township.",
@@ -122,8 +122,8 @@ export const projects: Project[] = [
     location: "Paldi, Ahmedabad",
     year: "2019",
     configuration: "Riverside 1 & 2 BHK",
-    cover: "/projects/ratnaruchi-vatika/cover.png",
-    gallery: ["/projects/ratnaruchi-vatika/cover.png"],
+    cover: "https://cdn.sanity.io/images/e4hmmdtc/production/985e4e9533a44ff92e7ea52091db7274caba847d-843x582.png",
+    gallery: ["https://cdn.sanity.io/images/e4hmmdtc/production/985e4e9533a44ff92e7ea52091db7274caba847d-843x582.png"],
     description:
       "Premium riverside apartments in Paldi, offering modern, spacious, and exquisite homes just a short walk from the Sabarmati Riverfront.",
     highlights: ["Walk to Riverfront", "Earthquake-Resistant", "Designed Main Gate", "Pollution-Free Zone"],
@@ -140,13 +140,13 @@ export const projects: Project[] = [
     location: "Ahmedabad",
     year: "2026",
     configuration: "3 BHK Premium Apartments",
-    cover: "/projects/shefali-2/cover.png",
+    cover: "https://cdn.sanity.io/images/e4hmmdtc/production/d7850374e8734ce7a896cf6d6243cdac37c756c4-1191x796.png",
     gallery: [
-      "/projects/shefali-2/cover.png",
-      "/projects/shefali-2/gallery-1.png",
-      "/projects/shefali-2/gallery-2.png",
-      "/projects/shefali-2/gallery-3.png",
-      "/projects/shefali-2/gallery-4.png"
+      "https://cdn.sanity.io/images/e4hmmdtc/production/d7850374e8734ce7a896cf6d6243cdac37c756c4-1191x796.png",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/cc901a56adf9f659518cd86e7d857607cb644dc7-1189x553.png",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/865bd75af2d81404c9daa9605520373f1e4a8fdc-1146x771.png",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/df97324bf4b7875133996be3fb05ca7411dcffc7-1189x661.png",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/f79933a986211c955d0a0739433b5892cd85b35d-1155x808.png"
     ],
     description:
       "A premium residential redevelopment project designed for modern urban living, featuring high-end 3 BHK layouts, mechanical parking, private balconies, and exceptional specifications in the heart of Ahmedabad.",
@@ -164,12 +164,12 @@ export const projects: Project[] = [
     location: "Motera, Ahmedabad",
     year: "2026",
     configuration: "3 & 4 BHK Premium Homes",
-    cover: "/projects/ratnanjali-elysium/cover.png",
+    cover: "https://cdn.sanity.io/images/e4hmmdtc/production/bd8c61e4d49482040923ae805c8dda72fa09cbe9-592x414.png",
     gallery: [
-      "/projects/ratnanjali-elysium/cover.png",
-      "/projects/ratnanjali-elysium/gallery-1.png",
-      "/projects/ratnanjali-elysium/gallery-2.png",
-      "/projects/ratnanjali-elysium/gallery-3.png"
+      "https://cdn.sanity.io/images/e4hmmdtc/production/bd8c61e4d49482040923ae805c8dda72fa09cbe9-592x414.png",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/6623dbda287f97d16215a2154595d005246d2873-592x417.png",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/1d264242a687d4d046d5b29c95a9d8e80176b144-634x428.png",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/360f24fca9df7812125ee90aa3b4c4b18f5bd8b6-865x418.png"
     ],
     description:
       "A premium 100% vegetarian residential community featuring spacious 3 & 4 BHK homes, Vaastu compliant layouts, central garden, gazebo, children's play area, and banquet hall in the rapidly growing hub of Motera, Ahmedabad.",

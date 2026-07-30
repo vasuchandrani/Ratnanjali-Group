@@ -18,7 +18,7 @@ export function ProjectsPage() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="/common/page-hero-bg.jpg"
+            src="https://cdn.sanity.io/images/e4hmmdtc/production/4c15fc83a23a9dfe34aa28432000899eb5223c4b-622x350.jpg"
             alt="Cover background"
             className="h-full w-full object-cover opacity-60 blur-[5px] scale-105"
           />

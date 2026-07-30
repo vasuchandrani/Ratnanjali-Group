@@ -1,7 +1,7 @@
 export const commonData = {
-  logo: "/brand/logo.png",
+  logo: "https://cdn.sanity.io/images/e4hmmdtc/production/f3df5dc047d270fb01688f4c54086940725f8b35-1600x800.png",
   brandName: "Ratnanjali Group",
-  favicon: "/brand/logo.png",
+  favicon: "https://cdn.sanity.io/images/e4hmmdtc/production/f3df5dc047d270fb01688f4c54086940725f8b35-1600x800.png",
   socials: {
     facebook: "#",
     instagram: "#",

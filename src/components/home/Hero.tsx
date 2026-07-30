@@ -33,7 +33,7 @@ export function Hero() {
             preload="auto"
             poster={hero.bgImage}
           >
-            <source src="/home/hero-video.mp4" type="video/mp4" />
+            <source src="https://cdn.sanity.io/files/72qij255/production/438bf2b22125ef793784ebfa5f1d727e3cf1b537.mp4" type="video/mp4" />
           </video>
           {/* Subtle grain texture */}
           <div className="absolute inset-0 bg-grain-dark pointer-events-none" />
