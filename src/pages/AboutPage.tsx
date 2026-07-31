@@ -79,14 +79,14 @@ export function AboutPage() {
           <div className="flex flex-col items-center justify-center">
             <div className="opacity-0 animate-[fade-up_0.8s_ease-out_.5s_forwards] w-full flex justify-center">
               <ShlokaKicker light className="mb-6">
-                A legacy carved in stone, measured in trust
+                A legacy carved in stone,<br className="sm:hidden" /> measured in trust
               </ShlokaKicker>
             </div>
-            <h1 className="max-w-4xl font-display text-5xl leading-[1.02] sm:text-6xl lg:text-7xl tracking-wide text-gold-soft font-semibold opacity-0 animate-[fade-up_1s_ease-out_.6s_forwards]">
+            <h1 className="max-w-4xl font-display text-3xl leading-[1.02] sm:text-6xl lg:text-7xl tracking-wide text-gold-soft font-semibold opacity-0 animate-[fade-up_1s_ease-out_.6s_forwards]">
               Our Legacy
             </h1>
             <p className="mt-6 max-w-xl mx-auto font-body text-base leading-[1.7] text-gold-soft/60 sm:text-lg opacity-0 animate-[fade-up_0.8s_ease-out_.9s_forwards]">
-              Nearly two decades of thoughtful creation and architectural excellence across Ahmedabad.
+              Nearly two decades of thoughtful creation<br className="sm:hidden" /> and architectural excellence across Ahmedabad.
             </p>
           </div>
           <div className="mt-12 w-full max-w-md mx-auto opacity-0 animate-[fade-in_1.2s_ease-out_1.2s_forwards]">

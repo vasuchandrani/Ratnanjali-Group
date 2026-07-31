@@ -32,14 +32,14 @@ export function ProjectsPage() {
           <div className="flex flex-col items-center justify-center">
             <div className="opacity-0 animate-[fade-up_0.8s_ease-out_.5s_forwards] w-full flex justify-center">
               <ShlokaKicker light className="mb-6">
-                A chronicle of landmarks, inscribed in the city's memory
+                A chronicle of landmarks,<br className="sm:hidden" /> inscribed in the city's memory
               </ShlokaKicker>
             </div>
-            <h1 className="max-w-4xl font-display text-5xl leading-[1.02] sm:text-6xl lg:text-7xl tracking-wide text-gold-soft font-semibold opacity-0 animate-[fade-up_1s_ease-out_.6s_forwards]">
+            <h1 className="max-w-4xl font-display text-3xl leading-[1.02] sm:text-6xl lg:text-7xl tracking-wide text-gold-soft font-semibold opacity-0 animate-[fade-up_1s_ease-out_.6s_forwards]">
               Landmark Developments
             </h1>
             <p className="mt-6 max-w-xl mx-auto font-body text-base leading-[1.7] text-gold-soft/60 sm:text-lg opacity-0 animate-[fade-up_0.8s_ease-out_.9s_forwards]">
-              Architectural masterpieces designed to outlive trends.
+              Architectural masterpieces<br className="sm:hidden" /> designed to outlive trends.
             </p>
           </div>
           <div className="mt-12 w-full max-w-md mx-auto opacity-0 animate-[fade-in_1.2s_ease-out_1.2s_forwards]">
@@ -50,7 +50,7 @@ export function ProjectsPage() {
       </section>
 
       {/* Alternating projects list */}
-      <section className="bg-background py-20 lg:py-32 relative">
+      <section className="bg-background py-20 lg:py-32 relative overflow-hidden">
         <div className="absolute inset-0 bg-grain pointer-events-none opacity-50" />
         <div className="container-x relative mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
           <div className="space-y-24 lg:space-y-40">
@@ -171,11 +171,11 @@ export function ProjectsPage() {
                         </p>
 
                         {/* Action buttons */}
-                        <div className="flex flex-nowrap items-center gap-3 pt-2">
+                        <div className="flex flex-wrap items-center gap-3 pt-2">
                           <Link
                             to="/projects/$slug"
                             params={{ slug: project.slug }}
-                            className="group inline-flex items-center gap-2 border border-gold/60 bg-gold/5 px-6 py-3 font-display text-[11px] font-bold uppercase tracking-[0.2em] text-gold hover:bg-gold/15 hover:border-gold transition-all duration-300 rounded-sm whitespace-nowrap"
+                            className="group inline-flex items-center gap-2 border border-gold/60 bg-gold/5 px-6 py-3 font-display text-[11px] font-bold uppercase tracking-[0.25em] text-gold hover:bg-gold/15 hover:border-gold transition-all duration-300 rounded-sm whitespace-nowrap"
                           >
                             Explore
                             <ArrowRight size={12} className="transition-transform group-hover:translate-x-1" />
@@ -186,9 +186,9 @@ export function ProjectsPage() {
                               href="https://ratnanjaligroup.com"
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="inline-flex items-center gap-2 border border-stone-dark/30 bg-stone-soft/20 px-6 py-3 font-display text-[11px] font-bold uppercase tracking-[0.2em] text-stone-dark hover:text-stone-dark hover:bg-stone-soft/40 hover:border-stone-dark/50 transition-all duration-300 rounded-sm whitespace-nowrap"
+                              className="inline-flex items-center gap-2 border border-stone-dark/30 bg-stone-soft/20 px-6 py-3 font-display text-[11px] font-bold uppercase tracking-[0.25em] text-stone-dark hover:text-stone-dark hover:bg-stone-soft/40 hover:border-stone-dark/50 transition-all duration-300 rounded-sm whitespace-nowrap"
                             >
-                              Download Brochure
+                              <span className="hidden sm:inline">Download </span>Brochure
                               <Download size={12} />
                             </a>
                           )}

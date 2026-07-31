@@ -130,14 +130,14 @@ export function ExpertisePage() {
           <div className="flex flex-col items-center justify-center">
             <div className="opacity-0 animate-[fade-up_0.8s_ease-out_.5s_forwards] w-full flex justify-center">
               <ShlokaKicker light className="mb-6">
-                Each discipline, a pillar in the temple of craft
+                Each discipline,<br className="sm:hidden" /> a pillar in the temple of craft
               </ShlokaKicker>
             </div>
-            <h1 className="max-w-4xl font-display text-5xl leading-[1.02] sm:text-6xl lg:text-7xl tracking-wide text-gold-soft font-semibold opacity-0 animate-[fade-up_1s_ease-out_.6s_forwards]">
+            <h1 className="max-w-4xl font-display text-3xl leading-[1.02] sm:text-6xl lg:text-7xl tracking-wide text-gold-soft font-semibold opacity-0 animate-[fade-up_1s_ease-out_.6s_forwards]">
               Our Expertise
             </h1>
             <p className="mt-6 max-w-xl mx-auto font-body text-base leading-[1.7] text-gold-soft/60 sm:text-lg opacity-0 animate-[fade-up_0.8s_ease-out_.9s_forwards]">
-              Enduring principles of architectural dharma built into every foundation.
+              Enduring principles of architectural dharma<br className="sm:hidden" /> built into every foundation.
             </p>
           </div>
           <div className="mt-12 w-full max-w-md mx-auto opacity-0 animate-[fade-in_1.2s_ease-out_1.2s_forwards]">
