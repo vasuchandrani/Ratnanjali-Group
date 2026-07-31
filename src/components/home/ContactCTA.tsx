@@ -34,7 +34,7 @@ export function ContactCTA() {
       <div className="container-x relative mx-auto max-w-[1400px]">
         <div className="grid items-end gap-16 lg:grid-cols-12">
           <Reveal className="lg:col-span-8">
-            <div className="eyebrow mb-4 text-gold-bright"><span className="rule" />Begin a Conversation</div>
+            <div className="font-label text-sm text-gold-soft font-bold tracking-wide mb-4"><span className="rule" />Begin a Conversation</div>
             <h2 className="font-display text-[2.5rem] sm:text-[3.25rem] lg:text-[5.8rem] leading-[0.95] tracking-wide">
               <span className="text-white">Let's build</span>
               <br />
@@ -46,7 +46,7 @@ export function ContactCTA() {
 
           <Reveal delay={1} className="lg:col-span-4">
             <p className="font-body text-base leading-relaxed text-white/60">
-              Whether you're a homebuyer, an investor, or a brand looking for a flagship address — we'd be glad to walk you through what's in progress and what's coming next.
+              Whether you're a homebuyer, an investor, or a brand looking for a flagship address, we'd be glad to walk you through what's in progress and what's coming next.
             </p>
             <div className="mt-10 flex flex-col gap-3">
               <Link
@@ -56,7 +56,7 @@ export function ContactCTA() {
                 Contact The Team
                 <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
               </Link>
-              <div className="mt-6 space-y-2 font-label text-sm text-gold-soft/50 tracking-wide">
+              <div className="mt-6 space-y-2 font-label text-sm text-gold-soft font-bold tracking-wide">
                 <div>{office.phone}</div>
                 <div>{office.email}</div>
               </div>

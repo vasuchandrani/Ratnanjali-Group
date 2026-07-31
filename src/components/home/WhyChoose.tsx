@@ -4,12 +4,12 @@ import { ShlokaKicker } from "@/components/heritage/ShlokaKicker";
 const reasons = [
   {
     t: "Architectural Excellence",
-    d: "Every elevation is shaped with named architects and in-house design review — never templated.",
+    d: "Every elevation is shaped with named architects and custom design reviews that are never templated.",
     thread: "Ramayana"
   },
   {
     t: "Strategic Locations",
-    d: "Every site is hand-selected at addresses that compound in value.",
+    d: "Every site is hand selected at addresses that compound in value.",
     thread: "Mahabharata"
   },
   {
@@ -19,17 +19,17 @@ const reasons = [
   },
   {
     t: "Timely Delivery",
-    d: "Our possession schedules are honoured — a discipline carried across two decades.",
+    d: "Our possession schedules are honoured as a discipline carried across two decades.",
     thread: "Ramayana"
   },
   {
     t: "Sustainable Development",
-    d: "Rainwater recharge, sewage treatment, low-impact materials — built into every project.",
+    d: "Rainwater recharge, sewage treatment, and low impact materials are built into every project.",
     thread: "Jainism"
   },
   {
-    t: "Long-Term Value",
-    d: "We design for the second owner as carefully as the first — built to appreciate.",
+    t: "Timeless Value",
+    d: "We design for the second owner as carefully as the first to build appreciation.",
     thread: "Buddhism"
   },
 ];

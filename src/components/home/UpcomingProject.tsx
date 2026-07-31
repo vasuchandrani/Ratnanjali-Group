@@ -28,7 +28,7 @@ export function UpcomingProject() {
               </span>
             </div>
             <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl tracking-wide text-foreground">
-              {upcomingProject.title} &mdash;{" "}
+              {upcomingProject.title} &ndash;{" "}
               <em className="not-italic font-heading italic gold-gradient-text">{upcomingProject.titleItalic}</em>
             </h2>
             <p className="mt-2 font-label text-[10px] uppercase tracking-[0.3em] text-gold/40">

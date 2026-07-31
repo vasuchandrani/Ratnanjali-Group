@@ -162,14 +162,14 @@ export function ExpertisePage() {
                       </div>
                       <div>
                         <h2 className="font-display text-2xl tracking-wide md:text-3xl">{c.t}</h2>
-                        <span className="mt-1 inline-block font-label text-[9px] uppercase tracking-[0.3em] text-gold/50">
+                        <span className="mt-1 inline-block font-label text-[9px] font-bold uppercase tracking-[0.3em] text-gold/80">
                           {c.tone}
                         </span>
                       </div>
                     </div>
                     <div className="col-span-2 md:col-span-1">
                       <p className="font-body text-[15px] leading-[1.85] text-foreground/65">{c.d}</p>
-                      <p className="mt-3 shloka-kicker text-gold/30 text-xs">— {c.thread} —</p>
+                      <p className="mt-3 shloka-kicker font-bold text-gold/60 text-xs">{c.thread}</p>
                     </div>
                   </div>
                 </Reveal>
