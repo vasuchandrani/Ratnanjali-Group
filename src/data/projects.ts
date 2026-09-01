@@ -101,10 +101,20 @@ export const projects: Project[] = [
     location: "Thol — Medha, Ahmedabad",
     year: "2025",
     configuration: "Heritage 2 BHK Pool Villas",
-    cover: "https://cdn.sanity.io/images/e4hmmdtc/production/3aa8c4287073105800bfaf83324d820fd8a9a7af-1400x904.jpg",
+    cover: "https://cdn.sanity.io/images/e4hmmdtc/production/8c466838e2b8a4dc9fd3936637bc443726679853-1600x1066.jpg",
     gallery: [
-      "https://cdn.sanity.io/images/e4hmmdtc/production/3aa8c4287073105800bfaf83324d820fd8a9a7af-1400x904.jpg",
-      "https://cdn.sanity.io/images/e4hmmdtc/production/156845d757ed90274f8579fad93d5584a06003d9-604x639.jpg"
+      "https://cdn.sanity.io/images/e4hmmdtc/production/8c466838e2b8a4dc9fd3936637bc443726679853-1600x1066.jpg",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/597288a9578ffe45fd266ceb2fefabecdebbb6cc-1600x1066.jpg",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/e95203bdf2dd1511e64044a50b34cb6bba3899ad-1600x1066.jpg",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/dab5484680d02327534fb0b255ab2a0f7bdc31eb-1600x1066.jpg",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/3a420b80dcb22059392e0f2c5287206d81fafa0c-1600x1066.jpg",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/2965cfbc2796111d9a0be49b72731aac3cc3f3c4-1600x1066.jpg",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/f4f00b0d5824ea0deee854b43e0148d964d9d6e6-1600x1066.jpg",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/83c0ce5989134ff2759252668f3ba29ca1f08b59-1600x1066.jpg",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/d494b19382215d9162006fc4672e92a6d5fb3f7b-1600x1066.jpg",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/3bae49b8751f55f3deed9a0ff733865754fe44e7-1600x1066.jpg",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/5c62e3daaec276174ad7079df31c69b4a68f6c5b-1600x1066.jpg",
+      "https://cdn.sanity.io/images/e4hmmdtc/production/29a6f741461ae4b1d6afe2fb74b4c41be9ac76b3-1600x1066.jpg"
     ],
     description:
       "A one-of-a-kind sustainable weekend estate featuring heritage pool villas, a 60,000 sq.ft. clubhouse, lake lagoon, Nakshatra Van, and an organic, vehicle free township.",

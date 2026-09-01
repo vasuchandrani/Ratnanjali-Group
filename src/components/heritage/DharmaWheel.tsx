@@ -25,11 +25,13 @@ export function DharmaWheel({
   color = "var(--gold)",
   opacity = 1,
 }: DharmaWheelProps) {
-  const spokes = 24;
+  const spokes = 20;
   const center = size / 2;
-  const outerR = size / 2 - 2;
-  const innerR = size / 2 - 14;
-  const hubR = size * 0.12;
+  const outerR = size * 0.44;
+  const innerR = size * 0.35;
+  const hubOuterR = size * 0.11;
+  const hubInnerR = size * 0.07;
+  const centerDotR = size * 0.035;
   const animClass = animate ? (slow ? "wheel-spin-slow" : "wheel-spin") : "";
 
   return (
@@ -48,8 +50,8 @@ export function DharmaWheel({
         r={outerR}
         fill="none"
         stroke={color}
-        strokeWidth="1.5"
-        opacity="0.8"
+        strokeWidth="1.6"
+        opacity="0.85"
       />
       {/* Inner rim */}
       <circle
@@ -58,38 +60,48 @@ export function DharmaWheel({
         r={innerR}
         fill="none"
         stroke={color}
-        strokeWidth="0.8"
-        opacity="0.5"
+        strokeWidth="1.2"
+        opacity="0.7"
       />
-      {/* Hub */}
+      {/* Hub outer ring */}
       <circle
         cx={center}
         cy={center}
-        r={hubR}
+        r={hubOuterR}
         fill="none"
         stroke={color}
-        strokeWidth="1.2"
+        strokeWidth="1.3"
         opacity="0.9"
       />
+      {/* Hub inner ring */}
       <circle
         cx={center}
         cy={center}
-        r={hubR * 0.4}
+        r={hubInnerR}
+        fill="none"
+        stroke={color}
+        strokeWidth="1.0"
+        opacity="0.8"
+      />
+      {/* Center solid dot */}
+      <circle
+        cx={center}
+        cy={center}
+        r={centerDotR}
         fill={color}
-        opacity="0.6"
+        opacity="0.9"
       />
 
-      {/* Spokes */}
+      {/* 20 Spokes */}
       {Array.from({ length: spokes }).map((_, i) => {
         const angle = (i * 360) / spokes;
         const rad = (angle * Math.PI) / 180;
-        const x1 = r4(center + hubR * Math.cos(rad));
-        const y1 = r4(center + hubR * Math.sin(rad));
+        const x1 = r4(center + hubOuterR * Math.cos(rad));
+        const y1 = r4(center + hubOuterR * Math.sin(rad));
         const x2 = r4(center + innerR * Math.cos(rad));
         const y2 = r4(center + innerR * Math.sin(rad));
 
-        // Alternating spoke styles for dharma-chakra authenticity
-        const isMain = i % 3 === 0;
+        const isCardinal = i % 5 === 0;
         return (
           <line
             key={i}
@@ -98,13 +110,13 @@ export function DharmaWheel({
             x2={x2}
             y2={y2}
             stroke={color}
-            strokeWidth={isMain ? "1.2" : "0.5"}
-            opacity={isMain ? 0.8 : 0.4}
+            strokeWidth={isCardinal ? "1.4" : "0.9"}
+            opacity={isCardinal ? 0.95 : 0.65}
           />
         );
       })}
 
-      {/* Decorative dots between inner and outer rim */}
+      {/* 8 Rivet dots in outer band */}
       {Array.from({ length: 8 }).map((_, i) => {
         const angle = (i * 360) / 8 + 22.5;
         const rad = (angle * Math.PI) / 180;
@@ -116,9 +128,9 @@ export function DharmaWheel({
             key={`dot-${i}`}
             cx={cx}
             cy={cy}
-            r="2"
+            r={size * 0.013}
             fill={color}
-            opacity="0.35"
+            opacity="0.75"
           />
         );
       })}

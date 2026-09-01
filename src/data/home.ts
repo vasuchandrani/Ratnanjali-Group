@@ -63,7 +63,7 @@ export const homeData = {
         title: "Community",
         cardTitle: "Designed Around People",
         desc: "Our developments create meaningful places where families, businesses, and communities can thrive together.",
-        img: "https://cdn.sanity.io/images/e4hmmdtc/production/156845d757ed90274f8579fad93d5584a06003d9-604x639.jpg",
+        img: "https://cdn.sanity.io/images/e4hmmdtc/production/e95203bdf2dd1511e64044a50b34cb6bba3899ad-1600x1066.jpg",
         to: "/about"
       },
       {
