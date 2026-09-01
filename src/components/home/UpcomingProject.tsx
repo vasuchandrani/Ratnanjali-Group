@@ -23,7 +23,6 @@ export function UpcomingProject() {
             <div className="flex items-center gap-3 mb-3">
               <span className="h-px w-8 bg-gold/50" />
               <span className="font-label text-[10px] uppercase tracking-[0.35em] text-gold/60 flex items-center gap-1.5">
-                <Sparkles size={12} className="text-gold/50" />
                 {upcomingProject.eyebrow}
               </span>
             </div>
