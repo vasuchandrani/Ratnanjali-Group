@@ -17,7 +17,7 @@ export function HomePage() {
       <ProudProjects />
       <UpcomingProject />
       <WhyChoose />
-      <Stats />
+      {/* <Stats /> */}
       <ContactCTA />
     </PageShell>
   );
