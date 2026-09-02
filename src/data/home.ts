@@ -83,7 +83,7 @@ export const homeData = {
     location: "Prahladnagar, Ahmedabad",
     description1: "A signature residential enclave conceptualized for those who seek the warmth of community living combined with the grandeur of palatial architecture. Hastinapur The Royal Legacy blends traditional Indian design sensibilities with modern vertical luxury.",
     description2: "Featuring five iconic residential towers, private elevators, sprawling green vistas, and a state-of-the-art heritage clubhouse, this landmark development has been successfully completed and delivered, establishing a new gold standard for high-end residential living in Ahmedabad.",
-    coverImage: "https://cdn.sanity.io/images/e4hmmdtc/production/a3fe911bb9504fcb373a0aacc07a87445c926eeb-960x1098.png",
+    coverImage: "https://cdn.sanity.io/images/e4hmmdtc/production/a3fe911bb9504fcb373a0aacc07a87445c926eeb-960x1098.png?rect=180,0,780,1098",
     highlights: [
       { title: "3 & 4 BHK Enclaves", desc: "With private elevator vestibules." },
       { title: "Majestic Clubhouse", desc: "Spanning 50,000+ sq.ft. of luxury." },

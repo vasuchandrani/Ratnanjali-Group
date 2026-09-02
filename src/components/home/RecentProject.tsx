@@ -35,16 +35,16 @@ export function RecentProject() {
         </Reveal>
 
         {/* Content and Image Grid with height matching layout */}
-        <div className="grid gap-10 lg:grid-cols-12 lg:gap-24 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-24 items-stretch w-full">
           {/* Details Content */}
-          <div className="lg:col-span-6 flex flex-col justify-between h-full space-y-6 sm:space-y-8">
-            <Reveal delay={1} className="max-w-xl space-y-4 sm:space-y-6 font-body text-sm sm:text-base leading-[1.8] text-muted-foreground">
+          <div className="lg:col-span-6 flex flex-col justify-between h-full space-y-6 sm:space-y-8 w-full">
+            <Reveal delay={1} className="w-full space-y-4 sm:space-y-6 font-body text-sm sm:text-base leading-[1.8] text-muted-foreground">
               <p>{recentProject.description1}</p>
               <p>{recentProject.description2}</p>
             </Reveal>
 
             {/* Highlights as carved plaques */}
-            <Reveal delay={2} className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 border-t border-gold/20 pt-6 sm:pt-8">
+            <Reveal delay={2} className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 border-t border-gold/20 pt-6 sm:pt-8 w-full">
               {recentProject.highlights.map((h, i) => (
                 <div
                   key={h.title}
@@ -57,19 +57,19 @@ export function RecentProject() {
             </Reveal>
 
             {/* CTAs */}
-            <Reveal delay={3} className="pt-2">
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-6">
+            <Reveal delay={3} className="pt-2 w-full">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-6 w-full">
                 <Link
                   to="/projects/$slug"
                   params={{ slug: "hastinapur" }}
-                  className="group inline-flex items-center justify-center gap-3 border border-gold/50 bg-gold/5 px-6 sm:px-8 py-3.5 sm:py-4 font-label text-[10px] sm:text-[11px] uppercase tracking-[0.24em] text-gold transition-all gold-shimmer hover:bg-gold/15 hover:border-gold text-center"
+                  className="group inline-flex items-center justify-center gap-3 border border-gold/50 bg-gold/5 px-6 sm:px-8 py-3.5 sm:py-4 font-label text-[10px] sm:text-[11px] uppercase tracking-[0.24em] text-gold transition-all gold-shimmer hover:bg-gold/15 hover:border-gold text-center w-full sm:w-auto"
                 >
                   Explore Landmark
                   <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
                 </Link>
                 <Link
                   to="/contact"
-                  className="group inline-flex items-center justify-center gap-3 border border-foreground/20 text-foreground/70 px-6 sm:px-8 py-3.5 sm:py-4 font-label text-[10px] sm:text-[11px] uppercase tracking-[0.24em] transition-all hover:border-foreground/30 hover:bg-foreground/5 text-center"
+                  className="group inline-flex items-center justify-center gap-3 border border-foreground/20 text-foreground/70 px-6 sm:px-8 py-3.5 sm:py-4 font-label text-[10px] sm:text-[11px] uppercase tracking-[0.24em] transition-all hover:border-foreground/30 hover:bg-foreground/5 text-center w-full sm:w-auto"
                 >
                   Schedule a Visit
                 </Link>
@@ -78,18 +78,18 @@ export function RecentProject() {
           </div>
 
           {/* Visual Showcase stretched to match left height */}
-          <div className="lg:col-span-6 relative flex flex-col h-full w-full max-w-lg lg:max-w-none mx-auto mt-4 lg:mt-0">
+          <div className="lg:col-span-6 relative flex flex-col h-full w-full mt-4 lg:mt-0">
             <Reveal className="h-full w-full relative group/visual carved-frame-hover">
               <Link
                 to="/projects/$slug"
                 params={{ slug: "hastinapur" }}
                 className="block h-full w-full cursor-pointer"
               >
-                {/* Outer hover frame */}
-                <div className="absolute -inset-4 border border-gold/5 scale-95 opacity-0 transition-all duration-700 group-hover/visual:scale-100 group-hover/visual:opacity-100 pointer-events-none" />
+                {/* Outer hover frame (desktop only to prevent mobile overflow) */}
+                <div className="hidden lg:block absolute -inset-4 border border-gold/5 scale-95 opacity-0 transition-all duration-700 group-hover/visual:scale-100 group-hover/visual:opacity-100 pointer-events-none" />
 
-                {/* Image Container stretched */}
-                <div className="relative h-full aspect-[4/5] sm:aspect-auto min-h-[400px] sm:min-h-[480px] overflow-hidden border border-gold/20 bg-basalt shadow-elevated">
+                {/* Image Container */}
+                <div className="relative w-full h-full aspect-[4/5] sm:aspect-auto min-h-[380px] sm:min-h-[480px] overflow-hidden border border-gold/20 bg-basalt shadow-elevated">
                   {/* Carved corners */}
                   <div className="carved-corner carved-corner-tl" />
                   <div className="carved-corner carved-corner-tr" />
@@ -99,7 +99,7 @@ export function RecentProject() {
                   <img
                     src={recentProject.coverImage}
                     alt={`${recentProject.title} completed rendering`}
-                    className="absolute inset-0 h-full w-full object-cover object-[62%_center] sm:object-[60%_center] lg:object-[62%_center] transition-transform duration-1000 group-hover/visual:scale-105"
+                    className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-1000 group-hover/visual:scale-105"
                     loading="lazy"
                   />
 
