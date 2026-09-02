@@ -32,7 +32,7 @@ export const projects: Project[] = [
     tagline: "The Royal Legacy",
     category: "residential",
     categoryLabel: "Residential",
-    status: "ongoing",
+    status: "completed",
     location: "Prahladnagar, Ahmedabad",
     year: "2024",
     configuration: "3 & 4 BHK · 5 Towers",

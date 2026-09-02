@@ -76,13 +76,13 @@ export const homeData = {
       }
     ]
   },
-  upcomingProject: {
-    eyebrow: "Upcoming Landmark",
+  recentProject: {
+    eyebrow: "Recently Completed Landmark",
     title: "Hastinapur",
     titleItalic: "The Royal Legacy",
     location: "Prahladnagar, Ahmedabad",
     description1: "A signature residential enclave conceptualized for those who seek the warmth of community living combined with the grandeur of palatial architecture. Hastinapur The Royal Legacy blends traditional Indian design sensibilities with modern vertical luxury.",
-    description2: "Featuring five iconic residential towers, private elevators, sprawling green vistas, and a state-of-the-art heritage clubhouse, this upcoming project sets a new gold standard for high-end residential living.",
+    description2: "Featuring five iconic residential towers, private elevators, sprawling green vistas, and a state-of-the-art heritage clubhouse, this landmark development has been successfully completed and delivered, establishing a new gold standard for high-end residential living in Ahmedabad.",
     coverImage: "https://cdn.sanity.io/images/e4hmmdtc/production/a3fe911bb9504fcb373a0aacc07a87445c926eeb-960x1098.png",
     highlights: [
       { title: "3 & 4 BHK Enclaves", desc: "With private elevator vestibules." },
@@ -90,6 +90,9 @@ export const homeData = {
       { title: "100% Pedestrian Friendly", desc: "Vehicle-free ground layout." },
       { title: "Gold Rated IGBC", desc: "Built with sustainable, green materials." }
     ]
+  },
+  get upcomingProject() {
+    return this.recentProject;
   },
   videoShowcase: {
     videoUrl: "https://cdn.sanity.io/files/e4hmmdtc/production/eceb870ee451a6d05743a841f02b13293013646e.mp4"

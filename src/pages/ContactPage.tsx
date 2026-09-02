@@ -82,7 +82,7 @@ export function ContactPage() {
               </div>
               <button
                 type="submit"
-                className="mt-4 w-fit border border-gold/40 bg-gold/10 px-10 py-4 font-label text-[11px] uppercase tracking-[0.24em] text-gold-soft transition-all gold-shimmer hover:bg-gold/20 hover:border-gold/60"
+                className="mt-4 w-full sm:w-fit justify-center border border-gold/40 bg-gold/10 px-10 py-4 font-label text-[11px] uppercase tracking-[0.24em] text-gold-soft transition-all gold-shimmer hover:bg-gold/20 hover:border-gold/60 text-center"
               >
                 Send Enquiry
               </button>

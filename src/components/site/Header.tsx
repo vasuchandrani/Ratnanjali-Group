@@ -36,18 +36,18 @@ export function Header() {
           : "bg-transparent border-b border-transparent"
       }`}
     >
-      <div className="container-x mx-auto flex max-w-[1400px] items-center justify-between h-20">
+      <div className="container-x mx-auto flex max-w-[1400px] items-center justify-between h-[88px]">
         <Link to="/" className="flex items-center" aria-label="Ratnanjali Group — Home">
           <Logo
             className={`w-auto transition-all duration-500 drop-shadow-[0_0_12px_rgba(196,164,105,0.2)] ${
-              scrolled ? "h-11 md:h-12" : "h-14 md:h-15"
+              scrolled ? "h-12 md:h-[53px]" : "h-[62px] md:h-[66px]"
             }`}
             variant={scrolled ? "dark" : "light"}
           />
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden items-center gap-10 lg:flex">
+        <nav className="hidden items-center gap-11 lg:flex">
           {nav.map((n, i) => (
             <Link
               key={n.to}
@@ -57,7 +57,7 @@ export function Header() {
             >
               {({ isActive }) => (
                 <span
-                  className={`group relative font-display font-bold text-[13px] uppercase tracking-[0.2em] transition-colors duration-300 ${
+                  className={`group relative font-display font-bold text-[14.5px] uppercase tracking-[0.2em] transition-colors duration-300 ${
                     isActive
                       ? "text-gold"
                       : scrolled
@@ -81,7 +81,7 @@ export function Header() {
         {/* Enquire CTA */}
         <Link
           to="/contact"
-          className={`hidden items-center gap-2 border-2 px-6 py-2.5 font-display font-extrabold text-[12px] uppercase tracking-[0.24em] transition-all duration-300 lg:inline-flex ${
+          className={`hidden items-center gap-2 border-2 px-7 py-3 font-display font-extrabold text-[13px] uppercase tracking-[0.24em] transition-all duration-300 lg:inline-flex ${
             scrolled
               ? "border-stone-dark text-stone-dark hover:bg-stone-dark/10"
               : "border-gold text-gold-bright gold-shimmer hover:bg-gold/10 hover:border-gold-bright"
@@ -98,7 +98,7 @@ export function Header() {
             scrolled ? "text-stone-dark" : "text-gold-soft"
           }`}
         >
-          {open ? <X size={24} /> : <Menu size={24} />}
+          {open ? <X size={26} /> : <Menu size={26} />}
         </button>
       </div>
 

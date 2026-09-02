@@ -9,7 +9,7 @@ export function ContactCTA() {
   const { office } = contactData;
 
   return (
-    <section className="relative isolate overflow-hidden bg-basalt py-32 text-white lg:py-44">
+    <section className="relative isolate overflow-hidden bg-basalt py-20 text-white lg:py-44">
       <img
         src={contactCta.bgImage}
         alt=""
@@ -32,10 +32,10 @@ export function ContactCTA() {
       </div>
 
       <div className="container-x relative mx-auto max-w-[1400px]">
-        <div className="grid items-end gap-16 lg:grid-cols-12">
+        <div className="grid items-end gap-10 lg:gap-16 lg:grid-cols-12">
           <Reveal className="lg:col-span-8">
-            <div className="font-label text-sm text-gold-soft font-bold tracking-wide mb-4"><span className="rule" />Begin a Conversation</div>
-            <h2 className="font-display text-[2.5rem] sm:text-[3.25rem] lg:text-[5.8rem] leading-[0.95] tracking-wide">
+            <div className="font-label text-xs sm:text-sm text-gold-soft font-bold tracking-wide mb-3"><span className="rule" />Begin a Conversation</div>
+            <h2 className="font-display text-3xl sm:text-[3.25rem] lg:text-[5.8rem] leading-[1.05] sm:leading-[0.95] tracking-wide">
               <span className="text-white">Let's build</span>
               <br />
               <em className="not-italic font-heading italic gold-gradient-text">
@@ -45,18 +45,18 @@ export function ContactCTA() {
           </Reveal>
 
           <Reveal delay={1} className="lg:col-span-4">
-            <p className="font-body text-base leading-relaxed text-white/60">
+            <p className="font-body text-sm sm:text-base leading-relaxed text-white/70">
               Whether you're a homebuyer, an investor, or a brand looking for a flagship address, we'd be glad to walk you through what's in progress and what's coming next.
             </p>
-            <div className="mt-10 flex flex-col gap-3">
+            <div className="mt-8 sm:mt-10 flex flex-col gap-3">
               <Link
                 to="/contact"
-                className="group inline-flex w-fit items-center gap-3 border border-gold/40 bg-gold/10 px-8 py-4 font-label text-[11px] uppercase tracking-[0.24em] text-gold-soft transition-all gold-shimmer hover:bg-gold/20 hover:border-gold/60"
+                className="group inline-flex w-full sm:w-fit justify-center items-center gap-3 border border-gold/40 bg-gold/10 px-8 py-4 font-label text-[11px] uppercase tracking-[0.24em] text-gold-soft transition-all gold-shimmer hover:bg-gold/20 hover:border-gold/60"
               >
                 Contact The Team
                 <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
               </Link>
-              <div className="mt-6 space-y-2 font-label text-sm text-gold-soft font-bold tracking-wide">
+              <div className="mt-4 sm:mt-6 space-y-1.5 sm:space-y-2 font-label text-xs sm:text-sm text-gold-soft font-bold tracking-wide">
                 <div>{office.phone}</div>
                 <div>{office.email}</div>
               </div>

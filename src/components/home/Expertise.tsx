@@ -34,24 +34,27 @@ export function Expertise() {
           </Reveal>
         </div>
 
-        {/* 4 Names Navigation */}
+        {/* 4 Names Navigation: 2 up, 2 down on mobile; single row on desktop */}
         <Reveal delay={1} className="w-full">
-          <div className="flex flex-wrap lg:flex-nowrap items-center justify-center gap-x-8 gap-y-4 md:gap-x-12 lg:gap-x-8 xl:gap-x-16 border-b border-gold/15 pb-8 mb-12">
+          <div className="grid grid-cols-2 lg:flex lg:flex-nowrap items-center justify-center gap-x-6 gap-y-5 sm:gap-x-10 md:gap-x-12 lg:gap-x-8 xl:gap-x-16 border-b border-gold/15 pb-6 sm:pb-8 mb-8 sm:mb-12">
             {expertise.sectors.map((s, idx) => (
               <button
                 key={s.title}
+                onClick={() => setActiveIdx(idx)}
                 onMouseEnter={() => setActiveIdx(idx)}
                 onFocus={() => setActiveIdx(idx)}
-                className={`relative font-display text-xl sm:text-2xl lg:text-2xl xl:text-3xl whitespace-nowrap tracking-wide transition-all duration-500 cursor-pointer ${activeIdx === idx
+                className={`relative font-display text-lg sm:text-2xl lg:text-2xl xl:text-3xl whitespace-nowrap tracking-wide transition-all duration-500 cursor-pointer pb-2 flex flex-col items-center justify-center ${
+                  activeIdx === idx
                     ? "gold-gradient-text font-semibold scale-105"
                     : "text-foreground/45 hover:text-foreground/80"
-                  }`}
+                }`}
               >
-                {s.title}
+                <span>{s.title}</span>
                 {/* Underline indicator */}
                 <span
-                  className={`absolute -bottom-[9px] left-0 h-[2px] bg-gradient-to-r from-gold to-gold-soft transition-all duration-500 ${activeIdx === idx ? "w-full" : "w-0"
-                    }`}
+                  className={`absolute -bottom-[2px] h-[2px] bg-gradient-to-r from-gold to-gold-soft transition-all duration-500 ${
+                    activeIdx === idx ? "w-full" : "w-0"
+                  }`}
                 />
               </button>
             ))}
@@ -60,7 +63,7 @@ export function Expertise() {
 
         {/* Smooth Image Cross-Fade & Description Below */}
         <Reveal delay={2}>
-          <div className="relative w-full max-w-5xl mx-auto aspect-[16/10] md:aspect-[21/9] overflow-hidden border border-gold/15 bg-stone shadow-md hover:border-gold/30 transition-all duration-500 carved-frame-hover">
+          <div className="relative w-full max-w-5xl mx-auto aspect-[4/5] sm:aspect-[16/10] md:aspect-[21/9] min-h-[400px] sm:min-h-[auto] overflow-hidden border border-gold/15 bg-stone shadow-md hover:border-gold/30 transition-all duration-500 carved-frame-hover">
             {/* Carved corner brackets */}
             <div className="carved-corner carved-corner-tl" />
             <div className="carved-corner carved-corner-tr" />
@@ -70,10 +73,11 @@ export function Expertise() {
             {expertise.sectors.map((s, idx) => (
               <div
                 key={s.title}
-                className={`absolute inset-0 transition-all duration-700 ease-in-out ${activeIdx === idx
+                className={`absolute inset-0 transition-all duration-700 ease-in-out ${
+                  activeIdx === idx
                     ? "opacity-100 scale-100 blur-0 z-10"
                     : "opacity-0 scale-105 blur-[4px] z-0 pointer-events-none"
-                  }`}
+                }`}
               >
                 <img
                   src={s.img}
@@ -82,29 +86,29 @@ export function Expertise() {
                   loading="lazy"
                 />
                 {/* Overlay Vignette */}
-                <div className="absolute inset-0 bg-gradient-to-t from-basalt/95 via-basalt/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-basalt/95 via-basalt/50 to-transparent" />
 
                 {/* Content Container */}
                 <div className="absolute inset-0 flex flex-col justify-end p-6 sm:p-10 md:p-12 text-white z-20">
                   <div className="max-w-2xl">
-                    <div className="flex items-center gap-4 mb-2">
-                      <span className="font-display text-lg text-gold font-semibold">{s.num}</span>
-                      <span className="h-px w-8 bg-gold/50" />
-                      <span className="font-label text-[10px] uppercase tracking-[0.25em] text-gold-soft">
+                    <div className="flex items-center gap-3 sm:gap-4 mb-2">
+                      <span className="font-display text-base sm:text-lg text-gold font-semibold">{s.num}</span>
+                      <span className="h-px w-6 sm:w-8 bg-gold/50" />
+                      <span className="font-label text-[9px] sm:text-[10px] uppercase tracking-[0.25em] text-gold-soft">
                         Core Principle
                       </span>
                     </div>
-                    <h3 className="font-display text-2xl sm:text-3xl lg:text-4xl tracking-wide font-semibold text-white">
+                    <h3 className="font-display text-xl sm:text-3xl lg:text-4xl tracking-wide font-semibold text-white">
                       {s.cardTitle}
                     </h3>
-                    <p className="mt-3 max-w-xl font-body text-sm leading-relaxed text-white/80">
+                    <p className="mt-2 sm:mt-3 max-w-xl font-body text-xs sm:text-sm leading-relaxed text-white/80 line-clamp-3 sm:line-clamp-none">
                       {s.desc}
                     </p>
 
                     {/* Link button to projects page */}
                     <Link
                       to={s.to}
-                      className="mt-6 inline-flex items-center gap-3 border border-white/40 hover:border-gold hover:bg-gold/15 px-6 py-3 font-label text-[10px] uppercase tracking-[0.25em] text-white transition-all duration-300"
+                      className="mt-4 sm:mt-6 inline-flex items-center gap-3 border border-white/40 hover:border-gold hover:bg-gold/15 px-5 sm:px-6 py-2.5 sm:py-3 font-label text-[9px] sm:text-[10px] uppercase tracking-[0.25em] text-white transition-all duration-300"
                     >
                       Explore Philosophy
                       <ArrowUpRight size={14} />
