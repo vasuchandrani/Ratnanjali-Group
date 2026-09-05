@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Rich Metallic Gold Linear Gradient for Stroke and Lustre -->
+    <linearGradient id="goldStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3C4" />
+      <stop offset="25%" stop-color="#F2D27E" />
+      <stop offset="55%" stop-color="#C59B27" />
+      <stop offset="85%" stop-color="#997010" />
+      <stop offset="100%" stop-color="#F7DF94" />
+    </linearGradient>
+
+    <linearGradient id="goldFill" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FCEBB2" />
+      <stop offset="40%" stop-color="#E2BD6E" />
+      <stop offset="75%" stop-color="#C29443" />
+      <stop offset="100%" stop-color="#8E6318" />
+    </linearGradient>
+
+    <!-- Deep Luxury Dark Backdrop Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1C1814" />
+      <stop offset="65%" stop-color="#100E0C" />
+      <stop offset="100%" stop-color="#080706" />
+    </radialGradient>
+
+    <!-- Soft Ambient Glow behind the Diamond -->
+    <radialGradient id="jewelGlow" cx="50%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#E2BD6E" stop-opacity="0.3" />
+      <stop offset="60%" stop-color="#C59B27" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#100E0C" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Sparkle Highlight Filter -->
+    <filter id="goldGlow" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Luxury dark circular container for contrast on light and dark browser tabs -->
+  <circle cx="256" cy="256" r="252" fill="url(#bgGrad)" />
+  <circle cx="256" cy="256" r="248" fill="url(#jewelGlow)" />
+  <circle cx="256" cy="256" r="250" fill="none" stroke="url(#goldStroke)" stroke-width="2.5" stroke-opacity="0.4" />
+
+  <!-- Outer diamond contour base fill -->
+  <polygon points="166,94 346,94 436,202 256,418 76,202"
+    fill="url(#goldFill)" fill-opacity="0.15" />
+
+  <!-- Individual Facets with Realistic Shimmer -->
+  <g>
+    <polygon points="166,94 76,202 166,202" fill="url(#goldFill)" fill-opacity="0.28" />
+    <polygon points="166,94 166,202 256,202" fill="url(#goldFill)" fill-opacity="0.18" />
+    <polygon points="166,94 256,94 256,202" fill="url(#goldFill)" fill-opacity="0.35" />
+    <polygon points="256,94 346,94 256,202" fill="url(#goldFill)" fill-opacity="0.45" />
+    <polygon points="346,94 256,202 346,202" fill="url(#goldFill)" fill-opacity="0.22" />
+    <polygon points="346,94 346,202 436,202" fill="url(#goldFill)" fill-opacity="0.38" />
+    <polygon points="76,202 166,202 256,418" fill="url(#goldFill)" fill-opacity="0.25" />
+    <polygon points="166,202 256,202 256,418" fill="url(#goldFill)" fill-opacity="0.4" />
+    <polygon points="256,202 346,202 256,418" fill="url(#goldFill)" fill-opacity="0.5" />
+    <polygon points="346,202 436,202 256,418" fill="url(#goldFill)" fill-opacity="0.3" />
+  </g>
+
+  <!-- Diamond Facet Wireframe Lines with Crisp Metallic Gold Stroke -->
+  <g filter="url(#goldGlow)" stroke="url(#goldStroke)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Outer Contour -->
+    <polygon points="166,94 346,94 436,202 256,418 76,202"
+      fill="none" stroke-width="8" />
+
+    <!-- Girdle horizontal line (M2 9 L22 9) -->
+    <line x1="76" y1="202" x2="436" y2="202" stroke-width="6.5" />
+
+    <!-- Vertical center line (M12 3 L12 21) -->
+    <line x1="256" y1="94" x2="256" y2="418" stroke-width="6.5" />
+
+    <!-- Table vertical struts (M7 3 L7 9 and M17 3 L17 9) -->
+    <line x1="166" y1="94" x2="166" y2="202" stroke-width="5.5" />
+    <line x1="346" y1="94" x2="346" y2="202" stroke-width="5.5" />
+
+    <!-- Crown diagonal struts (M7 3 L12 9 and M17 3 L12 9) -->
+    <line x1="166" y1="94" x2="256" y2="202" stroke-width="5.5" />
+    <line x1="346" y1="94" x2="256" y2="202" stroke-width="5.5" />
+
+    <!-- Pavilion diagonal struts (M7 9 L12 21 and M17 9 L12 21) -->
+    <line x1="166" y1="202" x2="256" y2="418" stroke-width="5.5" />
+    <line x1="346" y1="202" x2="256" y2="418" stroke-width="5.5" />
+  </g>
+
+  <!-- Sparkle highlight on table top corner -->
+  <circle cx="166" cy="94" r="6" fill="#FFFBE6" opacity="0.9" filter="url(#goldGlow)" />
+  <circle cx="346" cy="94" r="4" fill="#FFFBE6" opacity="0.7" filter="url(#goldGlow)" />
+  <circle cx="256" cy="418" r="4" fill="#FFFBE6" opacity="0.8" filter="url(#goldGlow)" />
+</svg>

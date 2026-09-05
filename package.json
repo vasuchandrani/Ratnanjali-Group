@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "vite build && node -e \"const fs=require('fs');const src=fs.existsSync('.output/public')?'.output/public':(fs.existsSync('.vercel/output/static')?'.vercel/output/static':null);if(src){['public_html','public'].forEach(d=>{fs.cpSync(src,d,{recursive:true,force:true});console.log('Synced static assets to '+d)});}else{console.log('No static output folder found');}\"",
     "build:dev": "vite build --mode development",
     "start": "node .output/server/index.mjs",
     "preview": "vite preview",
