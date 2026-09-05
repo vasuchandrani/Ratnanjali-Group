@@ -5,12 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build && node -e \"const fs=require('fs');const src=fs.existsSync('.output/public')?'.output/public':(fs.existsSync('.vercel/output/static')?'.vercel/output/static':null);if(src){['public_html','public'].forEach(d=>{fs.cpSync(src,d,{recursive:true,force:true});console.log('Synced static assets to '+d)});}if(!fs.existsSync('tmp'))fs.mkdirSync('tmp');fs.writeFileSync('tmp/restart.txt',Date.now().toString());console.log('Touched tmp/restart.txt for Passenger restart');\"",
+    "clean": "node -e \"const fs=require('fs');['.output','public_html/assets','public/assets','dist'].forEach(d=>{if(fs.existsSync(d)){fs.rmSync(d,{recursive:true,force:true});console.log('Removed: '+d)}});console.log('Clean complete')\"",
+    "build": "npm run clean && vite build && node -e \"const fs=require('fs');const src=fs.existsSync('.output/public')?'.output/public':(fs.existsSync('.vercel/output/static')?'.vercel/output/static':null);if(src){['public_html','public'].forEach(d=>{fs.cpSync(src,d,{recursive:true,force:true});console.log('Synced static assets to '+d)});}if(!fs.existsSync('tmp'))fs.mkdirSync('tmp');fs.writeFileSync('tmp/restart.txt',Date.now().toString());console.log('Touched tmp/restart.txt for Passenger restart');\"",
     "build:dev": "vite build --mode development",
     "start": "node .output/server/index.mjs",
     "preview": "vite preview",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "postinstall": "node -e \"if(process.env.NODE_ENV==='production'){console.log('Production detected — running build...');require('child_process').execSync('npm run build',{stdio:'inherit'})}else{console.log('Dev environment — skipping auto-build')}\""
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

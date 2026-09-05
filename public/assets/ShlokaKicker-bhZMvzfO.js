@@ -1,1 +1,0 @@
-import{s as e}from"./index-Cq5R8eyC.js";var t=e();function n({children:e,className:n=``,light:r=!1}){return(0,t.jsx)(`p`,{className:`shloka-kicker ${r?`text-gold-soft/70`:``} ${n}`,"aria-hidden":`true`,children:e})}export{n as t};
