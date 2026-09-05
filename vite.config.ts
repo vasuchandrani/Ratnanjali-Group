@@ -4,6 +4,9 @@ import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import tailwindcss from "@tailwindcss/vite";
 import { nitro } from "nitro/vite";
 
+const isVercel = Boolean(process.env.VERCEL);
+const preset = process.env.NITRO_PRESET || (isVercel ? "vercel" : "node-server");
+
 export default defineConfig({
   css: {
     transformer: "lightningcss",
@@ -19,7 +22,7 @@ export default defineConfig({
       server: { entry: "server" },
     }),
     nitro({
-      preset: process.env.NITRO_PRESET || "vercel",
+      preset,
     }),
     react(),
   ],
